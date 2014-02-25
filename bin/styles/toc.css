@@ -1,0 +1,9 @@
+.toc-appendix, .toc-article, .toc-table {
+	margin-left: 2.8em;
+}
+.toc-chapter, .toc-citations {
+	margin-left: 1.4em;
+}
+.toc-section {
+	margin-left: 2.1em;
+}

@@ -1,0 +1,17 @@
+.content-item .dates {
+	font-style: italic;
+}
+.content-item .download {
+	font-style: italic;
+}
+.content-item .label {
+	font-weight: bold;
+	margin-bottom: 2em;
+	text-align: center;
+}
+.content-item .vevent {
+	margin-bottom: 2em;
+}
+.content-item .vevent .summary {
+	font-weight: bold;
+}

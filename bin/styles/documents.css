@@ -1,0 +1,27 @@
+.content-item .dates {
+	font-style: italic;
+}
+.content-item .download {
+	font-style: italic;
+}
+.content-item .label {
+	font-weight: bold;
+	margin-bottom: 2em;
+	text-align: center;
+}
+.content-item .item {
+	margin-bottom: 1em;
+}
+.content-item .note {
+	font-size: small;
+}
+.content-item .section {
+	padding: 0.5em;
+	width: 50%;
+}
+.content-item .summary {
+	font-weight: bold;
+}
+.content-item table {
+	width: 100%;
+}

@@ -1,0 +1,23 @@
+#indx .entry {
+	padding-top: 0.25em;
+	padding-left: 3em;
+	text-indent: -3em;
+}
+#indx .entry .entry {
+	padding-top: 0px;
+}
+#indx-nav {
+	font-size: smaller;
+	font-weight: bold;
+	margin-bottom: 1em;
+	width: 100%;
+}
+#indx-nav a, #indx-nav a:link, #indx-nav a:visited {
+	color: #E0E0E0;
+}
+#indx-nav a:hover, #indx-nav a:active {
+	color: #000000;
+}
+#indx-nav td {
+	width: 4.76%;
+}

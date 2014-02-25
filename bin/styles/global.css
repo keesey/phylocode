@@ -1,0 +1,35 @@
+abbr {
+	border: none;
+	text-decoration: none;
+}
+body {
+	margin: 0px;
+	overflow: hidden;
+	padding: 0px;
+	scrollbar-3dlight-color: #7a98df;
+	scrollbar-arrow-color: #08527B;
+	scrollbar-base-color: #08527B;
+	scrollbar-darkshadow-color: #7a98df;
+	scrollbar-face-color: #FFFFFF;
+	scrollbar-highlight-color: #e7eef2;
+	scrollbar-shadow-color: #5b8fad;
+}
+.css-warning {
+	display: none;
+	visibility: hidden;
+}
+html {
+	font-family: Times New Roman, serif;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+}
+img {
+	border: none;
+}
+table {
+	border-collapse: collapse;
+}
+td, th {
+	vertical-align: top;
+}
