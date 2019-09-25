@@ -1,6 +1,39 @@
 html {
-    background-color: grey;
     font-size: 12pt;
+}
+
+@media screen {
+    html {
+        background-color: grey;
+        font-family: Roboto, sans;
+    }    
+    body > footer {
+        color: white;
+        background-color: black;
+    }
+    body > footer a {
+        text-decoration: none;
+    }
+}
+
+body > footer {
+    align-items: baseline;
+    bottom: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    left: 0;
+    margin: 0 auto;
+    max-width: 8.5in;
+    position: fixed;
+    padding: 0.25in;
+    right: 0;
+}
+
+@media print {
+    body > header, body > footer {
+        display: none;
+    }
 }
 
 main {
@@ -8,7 +41,7 @@ main {
     box-sizing: border-box;
     font-family: "Times New Roman", serif;
     max-width: 8.5in;
-    padding: 1in 1.5in;
+    padding: 1in 1.5in 2.25in;
     margin: 0 auto;
     width: 100vw;
 }
@@ -55,13 +88,20 @@ article h2 {
     text-align: center;
 }
 
-article h3 {
+article h3, article h4, article h5, article h6 {
     font-size: 1rem;
+}
+
+article h5, article h6 {
     display: inline;
 }
 
-article h3+p {
+article h5+p, article h6+p {
     display: inline;
+}
+
+#rules h1, #rules h2, #rules h3, #rules h4 {
+    text-align: center;
 }
 
 section {
@@ -75,4 +115,14 @@ em.author {
 
 em.editor {
     font-style: normal;
+}
+
+figure {
+    margin: 2rem auto;
+    text-align: center;
+}
+
+figcaption {
+    margin-top: 1rem;
+    text-align: justify;
 }
