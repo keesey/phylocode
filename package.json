@@ -1,0 +1,40 @@
+{
+  "author": "T. Michael Keesey <keesey+phylocode@gmail.com>",
+  "browserslist": [
+    "ie >= 10",
+    "ie_mob >= 10",
+    "ff >= 30",
+    "chrome >= 34",
+    "safari >= 7",
+    "opera >= 23",
+    "ios >= 7",
+    "android >= 4.4",
+    "bb >= 10"
+  ],
+  "description": "The website for The International Code of Phylogenetic Nomenclature (The PhyloCode)",
+  "devDependencies": {
+    "autoprefixer": "^9.6.1",
+    "cssnano": "^4.1.10",
+    "del": "^5.1.0",
+    "graceful-fs": "^4.2.2",
+    "gulp": "^4.0.2",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^6.1.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-uglify-es": "^1.0.4",
+    "s3": "^4.4.0",
+    "serve": "^11.1.0"
+  },
+  "license": "UNLICENSED",
+  "name": "phylocode.org",
+  "private": true,
+  "repository": "https://github.com/keesey/phylocode.git",
+  "scripts": {
+    "build": "gulp",
+    "deploy": "gulp && gulp deploy",
+    "postinstall": "gulp",
+    "serve": "gulp watch & serve dist --no-compression --listen 3000",
+    "watch": "gulp watch"
+  },
+  "version": "1.0.0-alpha.0"
+}
