@@ -1,0 +1,134 @@
+html {
+    background-color: white;
+    font-size: 12pt;
+}
+
+@media screen {
+    html {
+        background-color: grey;
+        font-family: Roboto, sans;
+    }    
+    body > footer {
+        color: white;
+        background-color: black;
+    }
+    body > footer a {
+        text-decoration: none;
+    }
+}
+
+body > footer {
+    align-items: baseline;
+    bottom: 0;
+    box-sizing: border-box;
+    display: flex;
+    font-size: smaller;
+    justify-content: space-around;
+    left: 0;
+    position: fixed;
+    padding: 0.125in;
+    right: 0;
+}
+
+@media print {
+    body > header, body > footer {
+        display: none;
+    }
+}
+
+main {
+    background-color: white;
+    box-sizing: border-box;
+    font-family: "Times New Roman", serif;
+    max-width: 8.5in;
+    padding: 1in 1.25in 2.25in;
+    margin: 0 auto;
+    width: 100vw;
+}
+
+@media (max-width: 8.5in) {
+    main {
+        padding: 17.647vw;
+    }
+}
+
+main > footer {
+    font-size: smaller;
+    margin-top: 4rem;
+    text-align: left;
+}
+
+main > footer > ol {
+    padding-inline-start: 0;
+}
+
+a {
+    color: inherit;
+}
+
+a:hover {
+    opacity: 0.6;
+}
+
+abbr[title] {
+    text-decoration: none;
+}
+
+header {
+    text-align: center;
+}
+
+article {
+    margin-top: 4rem;
+    text-align: justify;
+}
+
+article h2 {
+    font-size: 1rem;
+    text-align: center;
+}
+
+article h3, article h4, article h5, article h6 {
+    font-size: 1rem;
+}
+
+article h5, article h6 {
+    display: inline;
+}
+
+article h5+p, article h6+p {
+    display: inline;
+}
+
+#rules h1, #rules h2, #rules h3, #rules h4 {
+    text-align: center;
+}
+
+section {
+    margin-top: 2rem;
+}
+
+em.author {
+    font-style: normal;
+    font-variant: small-caps;
+}
+
+em.editor {
+    font-style: normal;
+}
+
+figure {
+    margin: 2rem auto;
+    text-align: center;
+}
+
+figure > img {
+    height: auto;
+    max-width: 100%;
+    width: auto;
+}
+
+figcaption {
+    margin-top: 1rem;
+    text-align: justify;
+}
