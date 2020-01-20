@@ -120,6 +120,7 @@ button:focus {
     color: #08527b;
     display: flex;
     flex-direction: column;
+    font-size: 10pt;
     font-style: italic;
     padding: 1em 0;
     position: fixed;
@@ -153,16 +154,16 @@ button:focus {
 #code-nav li::before {
     align-items: center;
     display: inline-flex;
-    color: #b5ffff;
+    color: #08527b;
     content: "━";
     font-family: monospace;
-    font-size: 10px;
+    font-size: 8px;
     font-style: normal;
     font-weight: bold;
-    height: 20px;
+    height: 16px;
     justify-content: center;
-    margin-right: 0.5rem;
-    width: 20px;
+    margin-right: 0.5em;
+    width: 16px;
 }
 
 #code-nav li.folder::before {
@@ -179,32 +180,6 @@ button:focus {
     display: none;
 }
 
-#code-nav-button {
-    align-content: center;
-    background: none;
-    border-style: none;
-    display: none;
-    font-style: normal;
-    font-weight: bold;
-    text-orientation: sideways-right;
-    writing-mode: vertical-lr;
-}
-
-#code-nav-button::after {
-    content: attr(title);
-}
-
-#code-nav-button::before {
-    color: #b5ffff;
-    content: "▶";
-    text-align: center;
-    writing-mode: horizontal-tb;
-}
-
-#code-nav.open #code-nav-button::before {
-    content: "◀";
-}
-
 .folder {
     cursor: pointer;
 }
@@ -216,24 +191,7 @@ button:focus {
         width: auto;
     }
     #code-nav {
-        cursor: pointer;
-        width: 24px;
-    }
-    #code-nav-button {
-        display: flex;
-    }
-    #code-nav-content {
         display: none;
-    }
-    #code-nav.open {
-        max-width: 2.5in;
-        width: 100vw;
-    }
-    #code-nav.open #code-nav-button::after {
-        content: none;
-    }
-    #code-nav.open #code-nav-content {
-        display: flex;
     }
 }
 
@@ -260,6 +218,9 @@ button:focus {
         position: fixed;
         right: 0;
         top: 50px;
+    }
+    #site-nav.open {
+        z-index: 2;
     }
     #site-nav.open #site-nav-content {
         display: flex;
@@ -297,6 +258,11 @@ main {
 
 main > header {
     font-family: Georgia, serif;
+}
+
+main img {
+    height: auto;
+    max-width: calc(100vw - 72px);
 }
 
 @media (max-width: 11in) {
