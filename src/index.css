@@ -54,10 +54,10 @@ button:focus {
     font-family: Georgia, serif;
     font-size: 24px;
     font-style: italic;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-left: 24px;
+    padding-right: 24px;
     text-align: left;
-    width: 252px;
+    width: calc(2.5in - 48px);
 }
 
 #site-nav-content {
@@ -90,23 +90,9 @@ button:focus {
     border-radius: 8px;
 }
 
-@media (max-width: 239px) {
-    #site-nav > div > header {
-        font-size: 10vw;
-    }
-}
-
-@media (max-width: calc(8.5in + 299px)) {
-    #site-nav > div > header {
-        width: auto;
-    }
-    #code-nav {
-        display: none;
-    }
-}
-
 #site-nav-content > li {
     padding: 0.5em;
+    text-transform: uppercase;
 }
 
 #site-nav-content > li > span {
@@ -115,12 +101,20 @@ button:focus {
 
 #site-nav-content > li > a {
     text-decoration: none;
-    text-transform: uppercase;
 }
 
 #site-nav-content > li > a:active, #site-nav-content > li > a:hover {
     background-color: #04293d;
     border-radius: 1em;
+}
+
+@media (max-width: calc(11in - 1px)) {
+    #site-nav > div > header {
+        width: auto;
+    }
+    #code-nav {
+        display: none;
+    }
 }
 
 @media (max-width: calc(8.5in - 1px)) {
@@ -135,6 +129,7 @@ button:focus {
         background-color: #04293d;
         border-bottom-left-radius: 1em;
         border-bottom-right-radius: 1em;
+        display: none;
         flex-direction: column;
         left: 0;
         margin: 0;
@@ -143,19 +138,40 @@ button:focus {
         right: 0;
         top: 50px;
     }
+    #site-nav-content.open {
+        display: flex;
+    }
+}
+
+@media (max-width: 239px) {
+    #site-nav > div > header {
+        font-size: 10vw;
+    }
+}
+
+@media (max-width: 179px) {
+    #site-nav > div {
+        justify-content: flex-end;
+    }
+    #site-nav > div > header {
+        display: none;
+    }
+    #site-nav-button {
+        flex-grow: 1;
+    }
 }
 
 #code-nav {
     background-color: #9cadf7;
     bottom: 0;
-    color: white;
+    color: #08527b;
     font-style: italic;
     padding: 1em 0;
     position: fixed;
     left: 0;
     overflow-y: auto;
     top: 50px;
-    width: 300px;
+    width: 2.5in;
 }
 
 #code-nav a {
@@ -163,7 +179,6 @@ button:focus {
 }
 
 #code-nav strong {
-    color: #08527b;
     font-style: normal;
     font-weight: bold;
 }

@@ -9,4 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     for (var i = 0; i < folders.length; i++) {
         folders.item(i).addEventListener("click", handleFolderClick);
     }
+    document.getElementById("site-nav-button").addEventListener("click", function () {
+        document.getElementById("site-nav-content").classList.toggle("open");
+    });
 });
