@@ -44,6 +44,22 @@ html {
     font-size: 12pt;
 }
 
+.inline-icon {
+    vertical-align: middle;
+}
+
+table {
+    text-align: left;
+}
+
+table ul {
+    margin: 0;
+}
+
+td, th {
+    vertical-align: top;
+}
+
 /* SITE NAVIGATION */
 
 #site-nav {
@@ -211,10 +227,9 @@ main img {
     max-width: calc(100vw - 72px);
 }
 
-@media (max-width: 11in) {
-    main {
-        padding: 17.647vw;
-    }
+main > header {
+    font-family: Georgia, serif;
+    margin-bottom: 3rem;
 }
 
 main > footer {
@@ -239,7 +254,7 @@ article > aside {
 }
 
 article h2 {
-    font-size: 1rem;
+    font-size: 1.25rem;
     text-align: center;
 }
 
@@ -288,6 +303,12 @@ figcaption {
     text-align: justify;
 }
 
+ul.files {
+    display: flex;
+    list-style: none;
+    padding-inline-start: 0;
+}
+
 /* RESPONSIVE LAYOUT */
 
 @media (max-width: calc(11in - 1px)) {
@@ -299,6 +320,7 @@ figcaption {
     }
     main {
         margin-left: 0;
+        padding: 17.647vw;
         width: 100vw;
     }
 }

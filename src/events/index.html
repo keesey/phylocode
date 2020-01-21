@@ -4,28 +4,286 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PhyloCode: Events</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="/index.css">
-    <title>PhyloCode: Events</title>
+    <script src="/index.js"></script>
 </head>
 
 <body>
-    <main>
-        <header>
-            <h1>International Phylogenetic Nomenclature Meetings</h1>
-        </header>
+    <nav id="site-nav">
+        <div>
+            <header><cite>PhyloCode</cite></header>
+            <ul id="site-nav-content">
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="/code">Code</a>
+                </li>
+                <li>
+                    <a href="//phylonames.org">Society</a>
+                </li>
+                <li>
+                    <span>Events</span>
+                </li>
+                <li>
+                    <a href="/documents">Documents</a>
+                </li>
+            </ul>
+            <button id="site-nav-button">☰</button>
+        </div>
+    </nav>
+    <nav id="code-nav">
         <ul>
             <li>
+                <a href="/code"><strong>Table of Contents</strong></a>
+            </li>
+            <li class="folder closed">
+                <a href="/code/preface"><strong>Preface</strong></a>
+                <ul>
+                    <li>
+                        <a href="/code/preface#properties"><strong>Properties of Phylogenetic Nomenclature</strong></a>
+                    </li>
+                    <li>
+                        <a href="/code/preface#advantages"><strong>Advantages of Phylogenetic Nomenclature</strong></a>
+                    </li>
+                    <li>
+                        <a href="/code/preface#history"><strong>History</strong></a>
+                    </li>
+                    <li>
+                        <a href="/code/preface#acknowledgments"><strong>Acknowledgments</strong></a>
+                    </li>
+                    <li>
+                        <a href="/code/preface#literature-cited"><strong>Literature Cited</strong></a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="/code/preamble"><strong>Preamble</strong></a>
+            </li>
+            <li>
+                <a href="/code/divisions/1"><strong>Division I</strong>. Principles</a>
+            </li>
+            <li class="folder open">
+                <a href="/code/divisions/2"><strong>Division II</strong>. Rules</a>
+                <ul>
+                    <li class="folder closed">
+                        <a href="/code/divisions/2/chapters/1"><strong>Chapter I</strong>. Taxa</a>
+                        <ul>
+                            <li>
+                                <a href="/code/articles/1"><strong>Article 1</strong>. Categories of Taxa</a>
+                            </li>
+                            <li>
+                                <a href="/code/articles/2"><strong>Article 2</strong>. Clades</a>
+                            </li>
+                            <li>
+                                <a href="/code/articles/3"><strong>Article 3</strong>. Hierarchy and
+                                    Rank</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="folder closed">
+                        <a href="/code/divisions/2/chapters/2"><strong>Chapter II</strong>. Publication</a>
+                        <ul>
+                            <li>
+                                <a href="/code/articles/4"><strong>Article 4</strong>. Publication Requirements</a>
+                            </li>
+                            <li>
+                                <a href="/code/articles/5"><strong>Article 5</strong>. Publication Date</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="folder closed">
+                        <a href="/code/divisions/2/chapters/3"><strong>Chapter III</strong>. Names</a>
+                        <ul>
+                            <li>
+                                <a href="/code/articles/6"><strong>Article 6</strong>. Categories of Names</a>
+                            </li>
+                            <li>
+                                <a href="/code/articles/7"><strong>Article 7</strong>. General Requirements for
+                                    Establishment</a>
+                            </li>
+                            <li>
+                                <a href="/code/articles/8"><strong>Article 8</strong>. Registration</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="folder closed">
+                        <a href="/code/divisions/2/chapters/4"><strong>Chapter IV</strong>. Establishment of Clade
+                            Names</a>
+                        <ul>
+                            <li>
+                                <a href="/code/articles/9"><strong>Article 9</strong>. General Requirements and
+                                    Phylogenetic Definitions</a>
+                            </li>
+                            <li>
+                                <a href="/code/articles/10"><strong>Article 10</strong>. Selection of Clade Names for
+                                    Establishment</a>
+                            </li>
+                            <li>
+                                <a href="/code/articles/11"><strong>Article 11</strong>. Specifiers and Qualifying
+                                    Clauses</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="folder closed">
+                        <a href="/code/divisions/2/chapters/5"><strong>Chapter V</strong>. Selection of Accepted Clade
+                            Names</a>
+                        <ul>
+                            <li>
+                                <a href="/code/articles/12"><strong>Article 12</strong>. Precedence</a>
+                            </li>
+                            <li>
+                                <a href="/code/articles/13"><strong>Article 13</strong>. Homonymy</a>
+                            </li>
+                            <li>
+                                <a href="/code/articles/14"><strong>Article 14</strong>. Synonymy</a>
+                            </li>
+                            <li>
+                                <a href="/code/articles/15"><strong>Article 15</strong>. Conservation, Suppression and
+                                    Emendation</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="folder closed">
+                        <a href="/code/divisions/2/chapters/6"><strong>Chapter VI</strong>. Hybrids</a>
+                        <ul>
+                            <li>
+                                <a href="/code/articles/16"><strong>Article 16</strong>. Provisions for Hybrids</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="folder closed">
+                        <a href="/code/divisions/2/chapters/7"><strong>Chapter VII</strong>. Orthography</a>
+                        <ul>
+                            <li>
+                                <a href="/code/articles/17"><strong>Article 17</strong>. Orthographic Requirements for
+                                    Establishment</a>
+                            </li>
+                            <li>
+                                <a href="/code/articles/18"><strong>Article 18</strong>. Subsequent Use and Correction
+                                    of Established Names</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="folder closed">
+                        <a href="/code/divisions/2/chapters/8"><strong>Chapter VIII</strong>. Authorship</a>
+                        <ul>
+                            <li>
+                                <a href="/code/articles/19"><strong>Article 19</strong>. Authorship of Names and
+                                    Definitions</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="folder closed">
+                        <a href="/code/divisions/2/chapters/9"><strong>Chapter IX</strong>. Citation</a>
+                        <ul>
+                            <li>
+                                <a href="/code/articles/20"><strong>Article 20</strong>. Citation of Authors and
+                                    Registration Numbers</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="folder closed">
+                        <a href="/code/divisions/2/chapters/10"><strong>Chapter X</strong>. Species Names</a>
+                        <ul>
+                            <li>
+                                <a href="/code/articles/21"><strong>Article 21</strong>. Provisions for Species
+                                    Names</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="folder closed">
+                        <a href="/code/divisions/2/chapters/11"><strong>Chapter XI</strong>. Governance</a>
+                        <ul>
+                            <li>
+                                <a href="/code/articles/22"><strong>Article 22</strong>. Governance of Phylogenetically
+                                    Defined Names</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="/code/glossary"><strong>Glossary</strong></a>
+            </li>
+            <li class="folder closed">
+                <a href="/code/appendices"><strong>Appendices</strong></a>
+                <ul>
+                    <li>
+                        <a href="/code/appendices/a"><strong>Appendix A</strong>. Registration Procedures and Data
+                            Requirements</a>
+                    </li>
+                    <li>
+                        <a href="/code/appendices/b"><strong>Appendix B</strong>. Code of Ethics</a>
+                    </li>
+                    <li>
+                        <a href="/code/appendices/c"><strong>Appendix C</strong>. Equivalence of Nomenclatural Terms
+                            Among Codes</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="/code/index"><strong>Index</strong></a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <header>
+            <h1>Events</h1>
+        </header>
+        <article>
+            <section id="ipnm3">
                 <h2>Third International Phylogenetic Nomenclature Meeting</h2>
                 <h3>July 21–23, 2008</h3>
                 <h3>Dalhousie University, Halifax, Nova Scotia, Canada</h3>
-                <a href="./ISPN3_Halifax_2008.pdf">
+                <a href="/documents/ISPN3_Halifax_2008.pdf">
                     Download the Program
                     <img src="https://www.adobe.com/content/dam/cc/en/legal/images/badges/PDF_32.png" width="32"
-                        height="32" alt="Adobe Portable Document Format">
+                        height="32" alt="Adobe Portable Document Format" class="inline-icon">
                 </a>
-            </li>
-        </ul>
+                <p>
+                    <em class="author">Laurin, M.</em>, and <em class="author">H. N. Bryant</em>. 2009. Third meeting of
+                    the International Society for Phylogenetic Nomenclature: a report. <cite>Zool. Scr.</cite>
+                    <strong>38</strong>: 333–337. <a
+                        href="https://dx.doi.org/10.1111/j.1463-6409.2008.00379.x"><code>doi:10.1111/j.1463-6409.2008.00379.x</code></a>
+                </p>
+            </section>
+            <section id="ipnm2">
+                <h2>Second International Phylogenetic Nomenclature Meeting</h2>
+                <h3>June 28–July 2, 2006</h3>
+                <h3>Yale University, New Haven, Connecticut, U.S.A.</h3>
+                <a href="/documents/ispn_meeting_program.pdf">
+                    Download the Program
+                    <img src="https://www.adobe.com/content/dam/cc/en/legal/images/badges/PDF_32.png" width="32"
+                        height="32" alt="Adobe Portable Document Format" class="inline-icon">
+                </a>
+                <p>
+                    <em class="author">Laurin, M.</em>, and <em class="author">P. D. Cantino</em>. 2007. Second meeting
+                    of the International Society for Phylogenetic Nomenclature: a report. <cite>Zool. Scr.</cite>
+                    <strong>36</strong>: 109–117. <a
+                        href="https://dx.doi.org/10.1111/j.1463-6409.2006.00268.x"><code>doi:10.1111/j.1463-6409.2006.00268.x</code></a>
+                </p>
+            </section>
+            <section id="ipnm1">
+                <h2>First International Phylogenetic Nomenclature Meeting</h2>
+                <h3>July 6–9, 2004</h3>
+                <h3>Muséum National d'Histoire Naturelle, Paris, France</h3>
+                <a href="/documents/ipnm.pdf">
+                    Download the Program
+                    <img src="https://www.adobe.com/content/dam/cc/en/legal/images/badges/PDF_32.png" width="32"
+                        height="32" alt="Adobe Portable Document Format" class="inline-icon">
+                </a>
+                <p>
+                    <em class="author">Laurin, M.</em>, and <em class="author">P. D. Cantino</em>. 2004. First
+                    International Phylogenetic Nomenclature Meeting: a report. <cite>Zool. Scr.</cite>
+                    <strong>33</strong>: 475–479. <a
+                        href="https://dx.doi.org/10.1111/j.0300-3256.2004.00176.x"><code>doi:10.1111/j.0300-3256.2004.00176.x</code></a>
+                </p>
+            </section>
+        </article>
     </main>
 </body>
 

@@ -5,16 +5,15 @@ document.addEventListener("DOMContentLoaded", function () {
         classList.toggle("open");
         classList.toggle("closed");
     }
-    function initNav(name) {
-        const id = name + "-nav";
-        document.getElementById(id).addEventListener("click", function () {
-            document.getElementById(id).classList.toggle("open");
-        });
-    }
     const folders = document.getElementById("code-nav").querySelectorAll(".folder")
     for (var i = 0; i < folders.length; i++) {
         folders.item(i).addEventListener("click", handleFolderClick);
     }
-    initNav("code");
-    initNav("site");
+    document.getElementById("site-nav").addEventListener("click", function (event) {
+        event.stopPropagation();
+        document.getElementById("site-nav").classList.toggle("open");
+    });
+    document.body.addEventListener("click", function () {
+        document.getElementById("site-nav").classList.remove("open");
+    });
 });
