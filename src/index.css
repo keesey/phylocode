@@ -50,6 +50,7 @@ html {
 
 table {
     text-align: left;
+    width: 100%;
 }
 
 table ul {
@@ -217,7 +218,7 @@ td, th {
 main {
     background-color: white;
     box-sizing: border-box;
-    padding: 1in 1.25in 2.25in;
+    padding: 1in 0 2.25in;
     margin: 0 2.5in 0;
     width: calc(100vw - 2.5in);
 }
@@ -229,21 +230,19 @@ main img {
 
 main > header {
     font-family: Georgia, serif;
-    margin-bottom: 3rem;
+    margin: 0 1.25in 3rem;
 }
 
 main > footer {
     font-size: smaller;
-    margin-top: 4rem;
+    margin: 4rem 1.25in 0;
     text-align: left;
 }
 
-main > footer > ol {
-    padding-inline-start: 0;
-}
-
 article {
-    margin-top: 4rem;
+    column-gap: 1.25in;
+    column-width: 7.25in;
+    margin: 4rem 1.25in 0;
     text-align: justify;
 }
 
@@ -305,6 +304,7 @@ figcaption {
 
 ul.files {
     display: flex;
+    justify-content: flex-end;
     list-style: none;
     padding-inline-start: 0;
 }
@@ -320,8 +320,16 @@ ul.files {
     }
     main {
         margin-left: 0;
-        padding: 17.647vw;
         width: 100vw;
+    }
+    main > header {
+        margin: 0 17.647vw 3rem;
+    }
+    main > footer {
+        margin: 4rem 17.647vw 0;
+    }
+    article {
+        margin: 4rem 17.647vw 0;
     }
 }
 
@@ -355,8 +363,8 @@ ul.files {
     #site-nav.open #site-nav-content {
         display: flex;
     }
-    main {
-        padding: 1in 14.7vw 2.25in;
+    article {
+        column-width: none;
     }
 }
 
