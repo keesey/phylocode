@@ -219,6 +219,13 @@ td, th {
 
 /* MAIN CONTENT */
 
+main :target::before {
+    content: "";
+    display: block;
+    height: calc(50px + 1rem);
+    margin-top: calc(-50px - 1rem);
+}
+
 main {
     background-color: white;
     box-sizing: border-box;
@@ -308,11 +315,12 @@ em.editor {
 }
 
 figure {
-    margin: 2rem auto;
+    margin-inline-end: auto;
+    margin-inline-start: auto;
     text-align: center;
 }
 
-figure > img {
+figure > img, figure > svg {
     height: auto;
     max-width: 100%;
     width: auto;
@@ -321,11 +329,6 @@ figure > img {
 figcaption {
     margin-top: 1rem;
     text-align: justify;
-}
-
-.footnotes {
-    font-size: smaller;
-    margin-top: 4em;
 }
 
 ul.files {
