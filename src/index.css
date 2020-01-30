@@ -217,6 +217,29 @@ td, th {
     cursor: pointer;
 }
 
+/* PAGE NAV */
+
+#page-nav {
+    background-color: #fff;
+    bottom: 0;
+    color: #ce84ef;
+    display: flex;
+    font-size: 10pt;
+    justify-content: space-between;
+    padding: 1rem;
+    position: fixed;
+    left: 2.5in;
+    right: 0;
+}
+
+#page-nav .prev::before {
+    content: "← ";
+}
+
+#page-nav .next::after {
+    content: " →";
+}
+
 /* MAIN CONTENT */
 
 main :target::before {
@@ -346,6 +369,9 @@ ul.files {
     }
     #code-nav {
         display: none;
+    }
+    #page-nav {
+        left: 0;
     }
     main {
         margin-left: 0;

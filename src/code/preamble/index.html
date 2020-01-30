@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="/index.css">
     <script src="/index.js"></script>
@@ -13,7 +14,7 @@
 <body>
     <nav id="site-nav">
         <div>
-            <header><cite>PhyloCode</cite></header>
+            <header><a href="/"><cite>PhyloCode</cite></a></header>
             <ul id="site-nav-content">
                 <li>
                     <a href="/">Home</a>
@@ -37,7 +38,7 @@
     <nav id="code-nav">
         <ul>
             <li>
-                <strong>Table of Contents</strong>
+                <a href="/code"><strong>Table of Contents</strong></a>
             </li>
             <li class="folder closed">
                 <a href="/code/preface"><strong>Preface</strong></a>
@@ -231,9 +232,10 @@
     </nav>
     <main>
         <header>
-            <h2>Preamble</h2>
+            <h1>International Code of Phylogenetic Nomenclature (PhyloCode)</h1>
         </header>
         <article id="preamble">
+            <h2>Preamble</h2>
             <section id="preamble-1">
                 1. Biology requires a precise, coherent, international system for naming clades. Scientific names have
                 long been governed by the traditional codes (listed in <a href="#preamble-4">Preamble item 4</a>), but
@@ -279,11 +281,11 @@
                         Fungi, and Plants (Melbourne Code)</cite>.</li>
             </ol>
         </footer>
-        <footer>
-            <a href="/code/preface">⟵ Preface</a>
-            <a href="/code/divisions/1">Division I. Principles ⟶</a>
-        </footer>
     </main>
+    <nav id="page-nav">
+        <a class="prev" href="/code/preface">Preface</a>
+        <a class="next" href="/code/divisions/1">Division I. Principles</a>
+    </nav>
 </body>
 
 </html>

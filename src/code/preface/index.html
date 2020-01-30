@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="/index.css">
     <script src="/index.js"></script>
@@ -44,7 +45,7 @@
 <body>
     <nav id="site-nav">
         <div>
-            <header><cite>PhyloCode</cite></header>
+            <header><a href="/"><cite>PhyloCode</cite></a></header>
             <ul id="site-nav-content">
                 <li>
                     <a href="/">Home</a>
@@ -275,12 +276,12 @@
                 Sangster, and Mieczyslaw Wolsan.
             </p>
             <ul class="footnotes">
-                <li id="footnote-1">
+                <li id="footnote-1" title="Footnote 1">
                     <span class="list-marker">*</span>
                     This is the first version published in hard copy. Previous versions are available at <a
                         href="/documents/">www.phylocode.org</a>.
                 </li>
-                <li id="footnote-2">
+                <li id="footnote-2" title="Footnote 2">
                     <span class="list-marker">**</span>
                     Authors listed alphabetically
                 </li>
@@ -1509,11 +1510,11 @@
 
             </section>
         </article>
-        <footer>
-            <a href="/code/">⟵ Table of Contents</a>
-            <a href="/code/preamble/">Preamble ⟶</a>
-        </footer>
     </main>
+    <nav id="page-nav">
+        <a class="prev" href="/code">Table of Contents</a>
+        <a class="next" href="/code/preamble">Preamble</a>
+    </nav>
 </body>
 
 </html>
