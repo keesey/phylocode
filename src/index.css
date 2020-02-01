@@ -38,6 +38,10 @@ header {
     text-align: center;
 }
 
+header > h1 {
+    font-style: italic;
+}
+
 html {
     background-color: white;
     font-family: "Open Sans", sans-serif;
@@ -149,7 +153,7 @@ td, th {
 
 #code-nav {
     background-color: #9cadf7;
-    bottom: 0;
+    border-bottom-right-radius: 32px;
     color: #08527b;
     display: flex;
     flex-direction: column;
