@@ -34,6 +34,31 @@ code {
     font-style: italic;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    text-align: center;
+}
+
+h1 {
+    font-size: calc(1rem + 10px);
+}
+
+h2 {
+    font-size: calc(1rem + 6px);
+}
+
+h3 {
+    font-size: calc(1rem + 4px);
+}
+
+h4 {
+    font-size: calc(1rem + 2px);
+}
+
+h5, h6 {
+    font-size: 1rem;
+}
+
 header {
     text-align: center;
 }
@@ -267,7 +292,7 @@ main img {
 }
 
 main > header {
-    margin: 0 2.5in 3rem;
+    margin: 0 2.5in 2rem;
 }
 
 main > footer {
@@ -284,30 +309,24 @@ main li {
 article {
     column-gap: 1.25in;
     column-width: 7.25in;
-    margin: 4rem 1.25in 0;
+    margin: 1rem 1.25in 0;
     text-align: center;
 }
 
 article > * {
     max-width: 7.25in;
-    text-align: justify;
     margin-left: auto;
     margin-right: auto;
+}
+
+article section {
+    text-align: justify;
 }
 
 article > aside {
     font-style: italic;
     margin-top: 1in;
     text-align: center;
-}
-
-article h2 {
-    font-size: 1.25rem;
-    text-align: center;
-}
-
-article h3, article h4, article h5, article h6 {
-    font-size: 1rem;
 }
 
 article h5, article h6 {
@@ -326,10 +345,6 @@ article h5.block::after, article h6.block::after {
 
 article h5+p, article h6+p {
     display: inline;
-}
-
-#rules h1, #rules h2, #rules h3, #rules h4 {
-    text-align: center;
 }
 
 section {
@@ -357,8 +372,13 @@ figure > img, figure > svg {
 }
 
 figcaption {
+    font-size: 14px;
     margin-top: 1rem;
     text-align: justify;
+}
+
+figcaption > h6 {
+    font-size: 14px;
 }
 
 ul.files {
@@ -376,8 +396,11 @@ ul.files {
 }
 
 ul.footnotes {
+    border-top: 1px solid;
+    font-size: 14px;
+    margin-top: 2rem;
     list-style-type: none;
-    padding: 0;
+    padding: 1rem 0 0;
     text-align: left;
 }
 
@@ -409,17 +432,20 @@ ul.footnotes {
         width: 100vw;
     }
     main > header {
-        margin: 0 17.647vw 3rem;
+        margin: 0 17.647vw 2rem;
     }
     main > footer {
         margin: 4rem 17.647vw 0;
     }
     article {
-        margin: 4rem 17.647vw 0;
+        margin: 1rem 17.647vw 0;
     }
 }
 
 @media (max-width: calc(8.5in - 1px)) {
+    #page-nav .description {
+        display: none;
+    }
     #site-nav {
         cursor: pointer;
     }
@@ -452,7 +478,7 @@ ul.footnotes {
     article {
         column-width: none;
     }
-    article > * {
+    article section {
         text-align: left;
     }
 }
@@ -464,6 +490,13 @@ ul.footnotes {
 }
 
 @media (max-width: 249px) {
+    #page-nav .prev, #page-nav .next {
+        text-decoration: none;
+        visibility: hidden;
+    }
+    #page-nav .prev::before, #page-nav .next::after {
+        visibility: visible;
+    }
     #site-nav > div > header {
         font-size: 10vw;
     }
