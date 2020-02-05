@@ -343,6 +343,7 @@ em.author {
 
 em.editor {
     font-style: normal;
+    font-variant: small-caps;
 }
 
 figure {
