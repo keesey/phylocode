@@ -277,6 +277,10 @@ main > footer {
     margin: 4rem 1.25in 0;
 }
 
+main li {
+    margin-bottom: 1em;
+}
+
 article {
     column-gap: 1.25in;
     column-width: 7.25in;
@@ -363,6 +367,30 @@ ul.files {
     justify-content: flex-end;
     list-style: none;
     padding-inline-start: 0;
+}
+
+.footnote-link {
+    font-size: smaller;
+    line-height: 1rem;
+    text-decoration: none;
+    vertical-align: super;
+}
+
+ul.footnotes {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+.list-marker {
+    font-size: smaller;
+    line-height: 1rem;
+    text-decoration: none;
+    vertical-align: super;
+    display: inline-block;
+    margin-right: 0.7em;
+    text-align: right;
+    width: 1.5em;
 }
 
 /* RESPONSIVE LAYOUT */
