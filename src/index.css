@@ -291,6 +291,37 @@ main img {
     max-width: calc(100vw - 72px);
 }
 
+main .indicated {
+    animation-duration: 0.67s;
+    animation-name: fade-out-in;
+    animation-timing-function: ease-in-out;
+}
+
+article .highlight {
+    cursor: pointer;
+    position: absolute;
+    margin-left: -1.5rem;
+    opacity: 0.5;
+}
+
+article .highlight:before {
+    content: "🔗"
+}
+
+article .highlight:active {
+    opacity: 1;
+}
+
+article .highlight:hover {
+    opacity: 0.75;
+}
+
+@keyframes fade-out-in {
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+} 
+
 main > header {
     margin: 0 2.5in 2rem;
 }
@@ -351,12 +382,9 @@ section {
     margin-top: 2rem;
 }
 
-em.author {
+em.author, em.editor {
     font-style: normal;
-}
-
-em.editor {
-    font-style: normal;
+    font-variant: small-caps;
 }
 
 figure {
