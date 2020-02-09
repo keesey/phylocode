@@ -7,6 +7,26 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="/index.css">
+    <style>
+article ol {
+    list-style-type: upper-roman;
+    margin-top: 1em;
+}
+article ol ol {
+    list-style-type: decimal;
+}
+article ol ol ol {
+    list-style-type: none;
+}
+article ol ol ol ol {
+    list-style-type: disc;
+}
+article ol h3 {
+    display: inline;
+    font-size: 1rem;
+    margin-right: 0.5em;
+}
+    </style>
     <script src="/index.js"></script>
     <title>PhyloCode: Appendix A. Registration Procedures and Data Requirements</title>
 </head>
@@ -214,7 +234,7 @@
                 <ul>
                     <li>
                         <strong>Appendix A</strong>. Registration Procedures and Data
-                            Requirements
+                        Requirements
                     </li>
                     <li>
                         <a href="/code/appendices/b"><strong>Appendix B</strong>. Code of Ethics</a>
@@ -236,6 +256,143 @@
         </header>
         <article id="appendix-a">
             <h2>Appendix A. Registration Procedures and Data Requirements</h2>
+            <p>Most recent revision: January 6, 2019</p>
+            <section id="introduction">
+                This appendix may be revised more frequently than the main body of the code and without a formal meeting
+                of the <abbr title="Committee on Phylogenetic Nomenclature">CPN</abbr>. The most recent information will
+                be made available through the <cite><abbr
+                        title="International Code of Phylogenetic Nomenclature">PhyloCode</abbr></cite> and/or <a
+                    href="//phylonames.org"><abbr
+                        title="International Society for Phylogenetic Nomenclature">ISPN</abbr> website</a>.
+            </section>
+            <section id="list">
+                <ol>
+                    <li>
+                        <p>
+                            <h3>Registration procedures</h3>
+                        </p>
+                        <p>Clade names and definitions governed by this code must be registered in RegNum, the
+                            repository of clade names that is maintained under the auspices of the International Society
+                            for Phylogenetic Nomenclature. After a name and definition are submitted to RegNum through
+                            its web interface, the submission will be checked for missing data. A temporary registration
+                            number will be issued at this time if the work in which the name will appear has not yet
+                            been accepted. Once the work has been accepted for publication, the author must notify
+                            RegNum and provide a full reference to the publication in order for the registration number
+                            to become permanent. Alternatively, an author may wait until after acceptance for
+                            publication before submitting the name, in which case the registration number will be issued
+                            immediately.</p>
+                        <p>If the spelling or definition of a submitted name is identical to one that already exists in
+                            the registration database, the author will be warned.</p>
+                    </li>
+                    <li>
+                        <h3>Data fields</h3>
+                        <span>(mandatory data indicated with an asterisk)</span>
+                        <ol>
+                            <li>
+                                <p>Data common to all clade names:</p>
+                                <ol>
+                                    <li>
+                                        Contact information (for each author): name*, mailing address, phone number, fax
+                                        number, email address*, home page URL.
+                                    </li>
+                                    <li>
+                                        Name to be registered*
+                                    </li>
+                                    <li>
+                                        Type of name* (new clade name, converted clade name)
+                                    </li>
+                                    <li>
+                                        Date of registration
+                                    </li>
+                                    <li>
+                                        Bibliographic reference to publication
+                                    </li>
+                                    <li>
+                                        Date of publication
+                                    </li>
+                                    <li>
+                                        Definition type* (minimum-clade, maximum-clade, apomorphy-based, etc.)
+                                    </li>
+                                    <li>
+                                        Phylogenetic definition*
+                                    </li>
+                                    <li>
+                                        List of specifiers*
+                                        <ol>
+                                            <li>
+                                                For a species cited as a specifier: name*, author*, year of
+                                                publication*, code which governs the name*, URL of taxonomic database
+                                                holding information
+                                            </li>
+                                            <li>
+                                                For an apomorphy cited as a specifier: description*
+                                            </li>
+                                            <li>
+                                                For a type specimen cited as a specifier: species name typified*, author
+                                                of species name typified*, year of publication of species name
+                                                typified*, code governing typified name*
+                                            </li>
+                                            <li>
+                                                For a specimen (other than a type) cited as a specifier: repository
+                                                institution*, collection data needed to locate the specimen*,
+                                                description or image or bibliographic reference to published image*
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li>
+                                        Qualifying clause (required if part of definition)
+                                    </li>
+                                    <li>
+                                        Status of definition as emended (if appropriate)
+                                    </li>
+                                    <li>
+                                        Reference phylogeny (bibliographic reference, URL, or accession number in public
+                                        repository)*
+                                    </li>
+                                    <li>
+                                        Status of name as conserved or suppressed (if appropriate)
+                                    </li>
+                                    <li>
+                                        Author’s comments
+                                    </li>
+                                    <li>
+                                        Administrator’s annotations
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                Data particular to converted clade names:
+                                <ol>
+                                    <li>
+                                        Preexisting name*
+                                    </li>
+                                    <li>
+                                        Author of preexisting name*
+                                    </li>
+                                    <li>
+                                        Direct bibliographic reference to original publication of preexisting name
+                                        (including year)*
+                                    </li>
+                                    <li>
+                                        Code governing the preexisting name*
+                                    </li>
+                                    <li>
+                                        URL of taxonomic database holding information about the name
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                Data particular to new clade names:
+                                <ol>
+                                    <li>
+                                        For a replacement name: replaced name*
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+            </section>
         </article>
     </main>
     <nav id="page-nav">
