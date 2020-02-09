@@ -323,7 +323,7 @@ article .highlight:hover {
 } 
 
 main > header {
-    margin: 0 2.5in 2rem;
+    margin: 0 2.5in;
 }
 
 main > footer {
@@ -340,7 +340,7 @@ main li {
 article {
     column-gap: 1.25in;
     column-width: 7.25in;
-    margin: 1rem 1.25in 0;
+    margin: 0 1.25in;
     text-align: center;
 }
 
@@ -464,13 +464,13 @@ ul.footnotes {
         width: 100vw;
     }
     main > header {
-        margin: 0 17.647vw 2rem;
+        margin: 0 17.647vw;
     }
     main > footer {
         margin: 4rem 17.647vw 0;
     }
     article {
-        margin: 1rem 17.647vw 0;
+        margin: 0 17.647vw;
     }
 }
 
