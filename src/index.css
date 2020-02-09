@@ -378,6 +378,10 @@ article h5+p, article h6+p {
     display: inline;
 }
 
+article h5+p+p, article h6+p+p {
+    margin-top: 1em;
+}
+
 section {
     margin-top: 2rem;
 }
@@ -417,7 +421,7 @@ ul.files {
 }
 
 .footnote-link {
-    font-size: smaller;
+    font-size: 0.75rem;
     line-height: 1rem;
     text-decoration: none;
     vertical-align: super;
