@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="/index.css">
+    <style>
+        dt {
+            font-weight: bold;
+        }
+        dd {
+            margin-bottom: 1em;
+        }
+    </style>
     <script src="/index.js"></script>
     <title>PhyloCode: Glossary</title>
 </head>
@@ -76,7 +84,7 @@
                                 <a href="/code/articles/1"><strong>Article 1</strong>. Categories of Taxa</a>
                             </li>
                             <li>
-                                <a href="/code/articles/2"><strong>Article 2</strong>. Clades</a>
+                                <a href="/code/chapters/1"><strong>Article 2</strong>. Clades</a>
                             </li>
                             <li>
                                 <a href="/code/articles/3"><strong>Article 3</strong>. Hierarchy and
@@ -181,7 +189,7 @@
                         <a href="/code/chapters/9"><strong>Chapter IX</strong>. Citation</a>
                         <ul>
                             <li>
-                                <a href="/code/articles/20"><strong>Article 20</strong>. Citation of Authors and
+                                <a href="/code/chapters/10"><strong>Article 20</strong>. Citation of Authors and
                                     Registration Numbers</a>
                             </li>
                         </ul>
@@ -190,7 +198,7 @@
                         <a href="/code/chapters/10"><strong>Chapter X</strong>. Species Names</a>
                         <ul>
                             <li>
-                                <a href="/code/articles/21"><strong>Article 21</strong>. Provisions for Species
+                                <a href="/code/chapters/11"><strong>Article 21</strong>. Provisions for Species
                                     Names</a>
                             </li>
                         </ul>
@@ -199,7 +207,7 @@
                         <a href="/code/chapters/11"><strong>Chapter XI</strong>. Governance</a>
                         <ul>
                             <li>
-                                <a href="/code/articles/22"><strong>Article 22</strong>. Governance of Phylogenetically
+                                <a href="/code/chapters/12"><strong>Article 22</strong>. Governance of Phylogenetically
                                     Defined Names</a>
                             </li>
                         </ul>
@@ -236,12 +244,500 @@
         </header>
         <article id="glossary">
             <h2>Glossary</h2>
-            <p>TBD</p>
+            <section>
+                <dl>
+                    <dt id="acceptable-name"><em>acceptable name</em></dt>
+                    <dd>An established name that is not a (non-conserved) later homonym and thus may potentially be an
+                        accepted name.</dd>
+
+                    <dt id="accepted-name"><em>accepted name</em></dt>
+                    <dd>The name that must be adopted for a clade under this code.</dd>
+
+                    <dt id="ancestor"><em>ancestor</em></dt>
+                    <dd>An entity from which another entity is descended.</dd>
+
+                    <dt id="apomorphy"><em>apomorphy</em> (<em>apomorphic</em>)</dt>
+                    <dd>A derived character state; a new feature that arose during the course of evolution (see
+                        <a href="#synapomorphy"><em>synapomorphy</em></a>).</dd>
+
+                    <dt id="apomorphy-modified-crown-clade-definition"><em>apomorphy-modified crown-clade
+                            definition</em></dt>
+                    <dd>A minimum-clade definition that is modified by the use of an apomorphy to define the name of a
+                        crown clade. See <a href="/code/articles/9#article-9.9">Article 9.9</a>.</dd>
+
+                    <dt id="apomorphy-based-definitions"><em>apomorphy-based definition</em></dt>
+                    <dd>A definition that associates a name with a clade originating in the first ancestor to evolve a
+                        specified apomorphy that was inherited by one or more internal specifiers. See <a
+                            href="/code/articles/9#article-9.7">Article 9.7</a>.</dd>
+
+                    <dt id="apomorphy-modified-node-based-definition"><em>apomorphy-modified node-based definition</em>
+                    </dt>
+                    <dd>A term used in earlier versions of this code that is roughly equivalent to an apomorphy-modified
+                        crown-clade definition in this version (see <a href="/code/articles/9#footnote-4">footnote to
+                            Art. 9.9</a>).</dd>
+
+                    <dt id="binomen"><em>binomen</em> (<em>binomina</em>)</dt>
+                    <dd>A name composed of two words; commonly used to refer to species names composed of a generic name
+                        and a specific name (<a href="#iczn"><cite>ICZN</cite></a>) or epithet (<a
+                            href="#icnp"><cite>ICNP</cite></a>, <a href="#icnafp"><cite>ICNAFP</cite></a>) under the
+                        rank-based codes.</dd>
+
+                    <dt id="branch"><em>branch</em></dt>
+                    <dd>An edge or internode (connection between two nodes) on a tree (in the sense of graph theory). On
+                        a phylogenetic tree, a branch is commonly used to represent (1) a lineage between two splitting
+                        events (internal branch), or between a splitting event and an extinction event (terminal branch)
+                        or between a splitting event and a specified time, often the present (terminal branch), or (2)
+                        an ancestor-descendant relationship. The term is sometimes also used (but not in this code) for
+                        an internode and all nodes and internodes distal to (descended from) it. </dd>
+
+                    <dt id="branch-based-relative"><em>branch-based definition</em></dt>
+                    <dd>A term used in earlier versions of this code that is roughly equivalent to a maximum-clade
+                        definition in this version (see <a href="/code/articles/9#footnote-2">footnote to Art. 9.5</a>).
+                    </dd>
+
+                    <dt id="branch-modified-node-based-definition"><em>branch-modified node-based definition</em></dt>
+                    <dd>A term used in earlier versions of this code that is roughly equivalent to a maximum-crown-clade
+                        definition in this version (see <a href="/code/articles/9#footnote-2">footnote to Art. 9.5</a>).
+                    </dd>
+
+                    <dt id="categorical-rank"><em>categorical rank</em> (also <em>taxonomic rank</em>)</dt>
+                    <dd>A formal category denoting position in a hierarchy of nested taxa. The categorical ranks
+                        commonly used in taxonomy comprise seven principal categories (kingdom, phylum or division,
+                        class, order, family, genus, and species), which are often treated as mandatory, as well as
+                        additional primary categories (e.g., cohort, tribe) and secondary categories (e.g., superorder,
+                        subfamily). Note that the species category is treated as a rank in rank-based nomenclature, even
+                        when it is conceptualized as a category of biological entities.</dd>
+
+                    <dt id="clade"><em>clade</em></dt>
+                    <dd>An ancestor (an organism, population, or species) and all of its descendants.</dd>
+
+                    <dt id="conditionally-suppressed-name"><em>conditionally suppressed name</em></dt>
+                    <dd>A name that is suppressed only in phylogenetic contexts in which it is a synonym of a particular
+                        conserved name (see <a href="#suppressed-name"><em>suppressed name</em></a>).</dd>
+
+                    <dt id="conserved-name"><em>conserved name</em></dt>
+                    <dd>An established name that the Committee on Phylogenetic Nomenclature has ruled should have
+                        precedence over earlier synonyms or homonyms.</dd>
+
+                    <dt id="conversion"><em>conversion</em></dt>
+                    <dd>The act of establishing a preexisting name in accordance with the rules of this code.</dd>
+
+                    <dt id="converted-clade-name"><em>converted (clade) name</em></dt>
+                    <dd>A preexisting name that has been established in accordance with the rules of this code (see <a
+                            href="#new-clade-name"><em>new
+                                (clade) name</em></a>).</dd>
+
+                    <dt id="crown-based-total-clade-definition"><em>crown-based total-clade definition</em></dt>
+                    <dd>A total-clade definition that is formulated through reference to the corresponding crown clade.
+                        See <a href="/code/articles/9#article-9.10">Article 9.10</a>.</dd>
+
+                    <dt id="crown-clade"><em>crown clade</em></dt>
+                    <dd>A clade originating in the most recent common ancestor of two or more extant species (or
+                        organisms). See <a href="/code/chapters/1#article-2.2">Article 2.2</a>.</dd>
+
+                    <dt id="crown-clade-definition"><em>crown-clade definition</em></dt>
+                    <dd>A phylogenetic definition that necessarily identifies a crown clade (<a
+                            href="/code/chapters/1#article-2.2">Art. 2.2</a>) as the referent
+                        of a taxon name. See <a href="/code/articles/9#article-9.9">Article 9.9</a>.</dd>
+
+                    <dt id="definition"><em>definition</em></dt>
+                    <dd>A statement specifying the meaning of a name; in this code, it is a statement specifying the
+                        taxon to which the name refers. </dd>
+
+                    <dt id="definitional-author"><em>definitional author</em></dt>
+                    <dd>The person(s) who published a phylogenetic definition for a name—either the original definition
+                        or an emended one (see <a href="#nominal-author"><em>nominal author</em></a>).</dd>
+
+                    <dt id="description"><em>description</em></dt>
+                    <dd>A statement of the features of a taxon (or its component organisms), not limited to those that
+                        distinguish it from other taxa with which it might be confused (see <a
+                            href="#diagnosis"><em>diagnosis</em></a>).</dd>
+
+                    <dt id="diagnosis"><em>diagnosis</em> (<em>diagnoses</em>)</dt>
+                    <dd>A statement of the features of a taxon (or its component organisms) that collectively
+                        distinguish it from other taxa with which it might be confused.</dd>
+
+                    <dt id="directly-specified-ancestor-definition"><em>directly-specified-ancestor definition</em></dt>
+                    <dd>A kind of minimum-clade definition in which the ancestor in which the clade originated is
+                        specified directly rather than indirectly through its descendants. See <a
+                            href="/code/articles/9#note-9.5.1">Note 9.5.1</a>.</dd>
+
+                    <dt id="emendation"><em>emendation</em></dt>
+                    <dd>A formal change in the phylogenetic definition of a name.</dd>
+
+                    <dt id="epithet"><em>epithet</em></dt>
+                    <dd>In the <a href="#icnafp"><cite>ICNAFP</cite></a>, a word that, when combined with the name of a
+                        genus, forms the name of an
+                        infrageneric taxon (e.g., species, subgenus, section, series) or, when combined with the name of
+                        a species, forms the name of an infraspecific taxon (e.g., subspecies, variety, form). The <a
+                            href="#icnp"><cite>ICNP</cite></a>
+                        also uses the term “epithet” but only at and below the species rank.</dd>
+
+                    <dt id="established-name"><em>established name</em></dt>
+                    <dd>A name that is published in accordance with <a href="/code/articles/7">Article 7</a> of this
+                        code, which may or may not be an
+                        acceptable or accepted name.</dd>
+
+                    <dt id="extant"><em>extant (of a taxon)</em></dt>
+                    <dd>Having one or more living representatives (organisms) at the present time, or at some specified
+                        time since humans began keeping written historical records.</dd>
+
+                    <dt id="external-specifier"><em>external specifier</em></dt>
+                    <dd>A species or specimen that is explicitly excluded from the clade whose name is being defined
+                        (see <a href="/code/articles/11#article-11.2">Art. 11.2</a>). Maximum-clade and
+                        maximum-crown-clade definitions have external specifiers, but
+                        minimum-clade, minimum-crown-clade, apomorphy-based and apomorphy-modified crown-clade
+                        definitions normally do not (unless external specifiers are used to prevent use of a name under
+                        certain hypotheses of relationships, clade composition, or both; see <a
+                            href="/code/articles/11#article-11.13">Art. 11.13</a>).</dd>
+
+                    <dt id="genus"><em>genus</em> (<em>genera</em>)</dt>
+                    <dd>One of the categorical ranks of rank-based nomenclature; more specifically, it is the primary
+                        rank above the rank of species and below that of family. The genus rank is mandatory in
+                        rank-based nomenclature not only because it is one of the seven principal ranks (kingdom, phylum
+                        or division, class, order, family, genus, species), which are commonly treated as mandatory, but
+                        also because the generic name is part of the species binomen.</dd>
+
+                    <dt id="heterodefinitional"><em>heterodefinitional</em></dt>
+                    <dd>Based on different phylogenetic definitions (see <a href="#synonym">synonym</a>).</dd>
+
+                    <dt id="homodefinitional"><em>homodefinitional</em></dt>
+                    <dd>Based on the same phylogenetic definition (see <a href="#synonym">synonym</a>).</dd>
+
+                    <dt id="homologous"><em>homologous</em></dt>
+                    <dd>Shared by virtue of inheritance from a common ancestor. A character or character state shared by
+                        two organisms (which may represent different species or clades) is said to be homologous if that
+                        character or character state was present in all of their ancestors back to and including their
+                        most recent common ancestor.</dd>
+
+                    <dt id="homonym"><em>homonym</em></dt>
+                    <dd>A name that is spelled identically to another name that refers to a different taxon. See <a
+                            href="/code/articles/13#article-13.1">Article
+                            13.1</a>.</dd>
+
+                    <dt id="hybrid-formula"><em>hybrid formula</em></dt>
+                    <dd>An expression consisting of the names of two taxa separated by a multiplication sign,
+                        designating a single organism or set of organisms of hybrid origin.</dd>
+
+                    <dt id="icnafp"><em><cite>ICNAFP</cite></em></dt>
+                    <dd><cite>International Code of Nomenclature for Algae, Fungi, and Plants</cite>.</dd>
+
+                    <dt id="icnp"><em><cite>ICNP</cite></em></dt>
+                    <dd><cite>International Code of Nomenclature of Prokaryotes</cite>.</dd>
+
+                    <dt id="icvcn"><em><cite>ICVCN</cite></em></dt>
+                    <dd><cite>International Code of Virus Classification and Nomenclature</cite>.</dd>
+
+                    <dt id="iczn"><em><cite>ICZN</cite></em></dt>
+                    <dd><cite>International Code of Zoological Nomenclature</cite>.</dd>
+
+                    <dt id="infraspecific-epithet"><em>infraspecific epithet</em></dt>
+                    <dd>Under the <a href="#icnafp"><cite>ICNAFP</cite></a>, the third word in an infraspecific
+                        trinomen.</dd>
+
+                    <dt id="infraspecific-name"><em>infraspecific name</em></dt>
+                    <dd>Under the <a href="#iczn"><cite>ICZN</cite></a>, the third word in an infraspecific trinomen.
+                    </dd>
+
+                    <dt id="infraspecific taxon"><em>infraspecific taxon</em></dt>
+                    <dd>Under the rank-based codes, a taxon below the rank of species.</dd>
+
+                    <dt id="internal-specifier"><em>internal specifier</em></dt>
+                    <dd>A species, specimen, or apomorphy that is explicitly included in the clade whose name is being
+                        defined (see <a href="/code/articles/11#article-11.2">Art. 11.2</a>). Every phylogenetic
+                        definition has at least one internal specifier, and
+                        all of the specifiers in minimum-clade, minimum-crown-clade, apomorphy-based, and
+                        apomorphy-modified node-based definitions are normally internal (unless external specifiers are
+                        used to prevent use of a name under certain hypotheses of relationships, clade composition, or
+                        both; see <a href="/code/articles/11#article-11.13">Art. 11.13</a>).</dd>
+
+                    <dt id="lineage"><em>lineage</em></dt>
+                    <dd>A series of entities (e.g., organisms, populations) that form a single unbroken and unbranched
+                        sequence of ancestors and descendants. That a lineage is unbranched does not deny the existence
+                        of side-branches, which are not parts of the lineage in question, or of branching at lower
+                        organizational levels (e.g., organelle lineages within a population lineage). There may even be
+                        branching at the organizational level in question as long as it is judged to be temporary. </dd>
+
+                    <dt id="maximum-clade-definition"><em>maximum-clade definition</em></dt>
+                    <dd>A definition that associates a name with the largest clade that contains one or more internal
+                        specifiers but does not contain one or more external specifiers. See <a
+                            href="/code/articles/9#article-9.6">Article 9.6</a>.</dd>
+
+                    <dt id="maximum-crown-clade-definition"><em>maximum-crown-clade definition</em></dt>
+                    <dd>A definition that associates a name with the largest crown clade that contains one or more
+                        internal specifiers but does not contain one or more external specifiers. See Article 9.9. </dd>
+
+                    <dt id="maximum-total-clade-definition"><em>maximum-total-clade definition</em></dt>
+                    <dd>A definition that associates a name with the largest clade that contains one or more internal
+                        specifiers but does not contain one or more external specifiers. See <a
+                            href="/code/articles/9#article-9.10">Article 9.10</a>.</dd>
+
+                    <dt id="minimum-clade-definition"><em>minimum-clade definition</em></dt>
+                    <dd>A definition that associates a name with the smallest clade that contains two or more internal
+                        specifiers. See <a href="/code/articles/9#article-9.5">Article 9.5</a>.</dd>
+
+                    <dt id="minimum-crown-clade-definition"><em>minimum-crown-clade definition</em></dt>
+                    <dd>A definition that associates a name with the smallest crown clade that contains two or more
+                        internal specifiers. See <a href="/code/articles/9#article-9.9">Article 9.9</a>.</dd>
+
+                    <dt id="monophyletic"><em>monophyletic</em></dt>
+                    <dd>A set consisting of an ancestor and all of its descendants; usually used for groups the members
+                        of which share a more recent common ancestor with one another than with any non-members, though
+                        monophyletic groups of organisms within sexually reproducing species/populations may not have
+                        this property.</dd>
+
+                    <dt id="name"><em>name</em></dt>
+                    <dd>A word or words used to designate (refer to) an organism or a group of organisms. See <a
+                            href="#acceptable-name"><em>acceptable name</em></a>, <a href="#accepted-name"><em>accepted
+                                name</em></a>, <a href="#conditionally-suppressed-name"><em>conditionally suppressed
+                                name</em></a>, <a href="#conserved-name"><em>conserved name</em></a>, <a
+                            href="#converted-name"><em>converted name</em></a>, <a
+                            href="#established-name"><em>established name</em></a>, <a
+                            href="#infraspecific-name"><em>infraspecific name</em></a>, <a href="#new-name"><em>new
+                                name</em></a>, <a href="#panclade-name"><em>panclade name</em></a>, <a
+                            href="#preexisting-name"><em>preexisting name</em></a>, <a
+                            href="#replacement-name"><em>replacement name</em></a>, <a
+                            href="#scientific-name"><em>scientific name</em></a>, <a href="#specific-name"><em>specific
+                                name</em></a>, <a href="#suppressed-name"><em>suppressed name</em></a>, <a
+                            href="#taxon-name"><em>taxon name</em></a>, <a href="#typified-name"><em>typified
+                                name</em></a>, <a href="#unconditionally-suppressed-name"><em>unconditionally suppressed
+                                name</em></a>.</dd>
+
+                    <dt id="new-clade-name"><em>new (clade) name</em></dt>
+                    <dd>A newly proposed name that has been established in accordance with the rules of this code (see
+                        <a href="#coverted-clade-name"><em>converted (clade) name</em></a>).</dd>
+
+                    <dt id="node"><em>node</em></dt>
+                    <dd>A point or vertex on a tree (in the sense of graph theory). On a phylogenetic tree, a node is
+                        commonly used to represent (1) the split of one lineage to form two or more lineages (internal
+                        node) or the extinction of a lineage (terminal node) or the lineage at a specified time, often
+                        the present (terminal node), or (2) a taxon, whether ancestral (internal node) or descendant
+                        (internal node or terminal node). </dd>
+
+                    <dt id="node-based-definition"><em>node-based definition</em></dt>
+                    <dd>A term used in earlier versions of this code that is roughly equivalent to a minimum-clade
+                        definition in this version (see <a href="#footnote to Art. 9.5">footnote to Art. 9.5</a>).</dd>
+
+                    <dt id="nomen-cladi-conversum"><em>nomen cladi conversum</em></dt>
+                    <dd>See <a href="#coverted-clade-name"><em>converted (clade) name</em></a>.</dd>
+
+                    <dt id="nomen-cladi-novum"><em>nomen cladi novum</em></dt>
+                    <dd>See <a href="#new-clade-name"><em>new (clade) name</em></a>.</dd>
+
+                    <dt id="nomen-substitutum"><em>nomen substitutum</em></dt>
+                    <dd>See <a href="#replacemane-name"><em>replacement name</em></a>.</dd>
+
+                    <dt id="nominal-author"><em>nominal author</em></dt>
+                    <dd>The person(s) who first published a name, regardless whether it was phylogenetically defined
+                        (see <a href="#definitional-author">definitional author</a>).</dd>
+
+                    <dt id="orthography"><em>orthography</em></dt>
+                    <dd>The spelling of a name.</dd>
+
+                    <dt id="panclade-name"><em>panclade name</em></dt>
+                    <dd>A name that is derived from the name of a crown clade by the addition of the prefix <em
+                            class="affix">Pan-</em> and is
+                        used to designate the total clade of that crown clade. See Articles <a
+                            href="/code/articles/10#article-10.3">10.3</a>–<a
+                            href="/code/articles/10#article-10.7">10.7</a>.</dd>
+
+                    <dt id="paraphyletic"><em>paraphyletic</em></dt>
+                    <dd>A set including an ancestor but excluding some or all of its descendants.</dd>
+
+                    <dt id="phylogenetic"><em>phylogenetic</em></dt>
+                    <dd>Of or pertaining to the history of ancestry and descent.</dd>
+
+                    <dt id="phylogenetic-definition"><em>phylogenetic definition</em></dt>
+                    <dd>A statement specifying a particular clade as the entitiy to which a name refers.</dd>
+
+                    <dt id="phylogenetic-hypothesis"><em>phylogenetic hypothesis</em> (<em>hypotheses</em>)</dt>
+                    <dd>A proposition about the relationships among biological entities (e.g., species, populations,
+                        organisms) in terms of common ancestry.</dd>
+
+                    <dt id="phylogenetic-system"><em>phylogenetic system (of nomenclature)</em></dt>
+                    <dd>An integrated set of principles and rules governing the naming of taxa and the application of
+                        taxon names that is based on the principle of common descent. This code describes a phylogenetic
+                        system of nomenclature. </dd>
+
+                    <dt id="phylogenetic-tree"><em>phylogenetic tree</em></dt>
+                    <dd>The diagrammatic representation of phylogeny as a tree in the sense of a minimally connected
+                        graph (number of branches = number of nodes minus one).</dd>
+
+                    <dt id="phylogeny"><em>phylogeny</em></dt>
+                    <dd>Evolutionary history; the history of descent with modification, whether in general or a
+                        particular part thereof. The term is also sometimes used for a hypothesis of phylogenetic
+                        relationships (as in the term <a href="#reference-phylogeny"><em>reference phylogeny</em></a>).
+                    </dd>
+
+                    <dt id="precedence"><em>precedence</em></dt>
+                    <dd>The order of preference among established names, used to select the accepted name from among
+                        them. In general, precedence is based on the date of establishment, with earlier-established
+                        names having precedence over later ones, but later-established names may be conserved over
+                        earlier ones.</dd>
+
+                    <dt id="preexisting-name"><em>preexisting name</em></dt>
+                    <dd>A scientific name that, prior to its establishment under this code, was either: (a) “legitimate”
+                        (<a href="#icnafp"><cite>ICNAFP</cite></a>, <a href="#icnp"><cite>ICNP</cite></a>), “potentially
+                        valid” (<a href="#iczn"><cite>ICZN</cite></a>), or “valid” (<a
+                            href="#icvcn"><cite>ICVCN</cite></a>); or (b) in use but not governed
+                        by any code (e.g., zoological names ranked above the family group).</dd>
+
+                    <dt id="protologue"><em>protologue</em></dt>
+                    <dd>Everything associated with a name when it was first established (under this code), validly
+                        published (<a href="#icnafp"><cite>ICNAFP</cite></a>, <a href="#icnp"><cite>ICNP</cite></a>), or
+                        made available (<a href="#iczn"><cite>ICZN</cite></a>), for example, description, diagnosis,
+                        phylogenetic definition, registration number, designation of type, illustrations, references,
+                        synonymy, geographical data, specimen citations, and discussion.</dd>
+
+                    <dt id="qualifying-clause"><em>qualifying clause</em></dt>
+                    <dd>A part of a phylogenetic definition that specifies conditions under which the defined name
+                        cannot be applied.</dd>
+
+                    <dt id="rank"><em>rank</em></dt>
+                    <dd>The position in a hierarchy; in the case of biological nomenclature, the position in a hierarchy
+                        of nested taxa.</dd>
+
+                    <dt id="rank-based-codes"><em>rank-based codes</em></dt>
+                    <dd>The codes that govern the rank-based system of nomenclature—specifically, the
+                        <cite>International Code
+                            of Nomenclature for Algae, Fungi, and Plants</cite>, the <cite>International Code of
+                            Zoological Nomenclature</cite>,
+                        the <cite>International Code of Nomenclature of Prokaryotes</cite>, and the <cite>International
+                            Code of Virus
+                            Classification and Nomenclature</cite>.</dd>
+
+                    <dt id="rank-based-system"><em>rank-based system</em> (<em>of nomenclature</em>)</dt>
+                    <dd>An integrated set of principles and rules governing the naming of taxa and the application of
+                        taxon names that is based on taxonomic ranks (e.g., kingdom, phylum). Also referred to as the
+                        “traditional system.”</dd>
+
+                    <dt id="reference-phylogeny"><em>reference phylogeny</em></dt>
+                    <dd>A phylogenetic hypothesis that provides a context for applying a clade name by means of its
+                        phylogenetic definition.</dd>
+
+                    <dt id="replacement-name"><em>replacement name</em></dt>
+                    <dd>A new name explicitly substituted for a previously established name that is not acceptable
+                        because it is a later homonym. A replacement name is equivalent to a <em>nomen substitutum</em>
+                        in this
+                        code. (The term “replacement name” has been used in a broader sense under the <a
+                            href="#iczn"><cite>ICZN</cite></a> to include
+                        what the <a href="#icnafp"><cite>ICNAFP</cite></a> refers to as a superfluous name and the <a
+                            href="#iczn"><cite>ICZN</cite></a> refers to as an unnecessary
+                        substitute name.)</dd>
+
+                    <dt id="restricted-emendation"><em>restricted emendation</em></dt>
+                    <dd>A formal change in a phylogenetic definition that requires approval by the Committee on
+                        Phylogenetic Nomenclature; a restricted emendation is intended to change the application of a
+                        name through a change in the conceptualization of the clade to which it refers. See <a
+                            href="#unrestricted-emendation"><em>unrestricted
+                                emendation</em></a>.</dd>
+
+                    <dt id="scientific-name"><em>scientific name</em></dt>
+                    <dd>A taxon name that either is formed and governed by one of the codes of biological nomenclature
+                        or is of a similar Latinized form (e.g., zoological names ranked above the family group).</dd>
+
+                    <dt id="sister-clade"><em>sister clade</em></dt>
+                    <dd>One member of a pair of clades originating when a single lineage splits into two. Sister clades
+                        thus share an exclusive common ancestry and are mutually most closely related to one another in
+                        terms of common ancestry.</dd>
+
+                    <dt id="species"><em>species</em></dt>
+                    <dd>This term is used both for a kind of biological entity (for example, a population lineage
+                        segment) and for the lowest primary rank in traditional nomenclature (and thus also for any
+                        taxon assigned to that rank). This code does not endorse any species concept nor provide rules
+                        for defining species names, but it uses species names governed by the rank-based codes to refer
+                        to taxa that are used as specifiers in definitions of clade names. Article 21 provides
+                        guidelines for the use of species names governed by the rank-based codes in conjunction with
+                        clade names governed by this code.</dd>
+
+                    <dt id="specific-name"><em>specific name</em></dt>
+                    <dd>Under the <a href="#iczn"><cite>ICZN</cite></a>, the second word in a species binomen.</dd>
+
+                    <dt id="specifier"><em>specifier</em></dt>
+                    <dd>A species, specimen, or apomorphy cited in a phylogenetic definition of a name as a reference
+                        point that serves to specify the clade to which the name applies.</dd>
+
+                    <dt id="stem-based definition"><em>stem-based definition</em></dt>
+                    <dd>A term used in earlier versions of this code that is roughly equivalent to maximum-clade
+                        definition in this version (see <a href="/code/articles/9#footnote-2">footnote to Art. 9.5</a>).
+                    </dd>
+
+                    <dt id="stem-modified node-based definition"><em>stem-modified node-based definition</em></dt>
+                    <dd>A term used in earlier versions of this code that is roughly equivalent to a maximum-crown-clade
+                        definition in this version (see <a href="/code/articles/9#footnote-2">footnote to Art. 9.5</a>).
+                    </dd>
+
+                    <dt id="suppressed-name"><em>suppressed name</em></dt>
+                    <dd>A name that would normally have precedence but does not, due to a decision by the Committee on
+                        Phylogenetic Nomenclature to give precedence to a later synonym or homonym.</dd>
+
+                    <dt id="synapomorphy"><em>synapomorphy</em> (<em>synapomorphic</em>)</dt>
+                    <dd>A shared apomorphy. In this code, a synapomorphy is a shared, derived character state inherited
+                        from a common ancestor that possessed that state; a shared, independently derived character
+                        state is not considered to be a synapomorphy in the sense the term is used in this code (see
+                        <a href="#apomorphy"><em>apomorphy</em></a>).</dd>
+
+                    <dt id="synonym"><em>synonym</em></dt>
+                    <dd>A name that is spelled differently than another name that refers to the same taxon. In the case
+                        of clade names, synonyms may be homodefinitional or heterodefinitional.</dd>
+                     
+                    <dt id="taxon"><em>taxon</em> (<em>taxa</em>)</dt>
+                    <dd>A group of organisms or species considered a potential recipient of a scientific name. The only
+                        taxa whose names are governed by this code are clades. However, species, whose names are
+                        governed by the rank-based codes, are frequently used to define clade names in this code.</dd>
+
+                    <dt id="taxon-name"><em>taxon name</em></dt>
+                    <dd>The word (or, in rank-based codes, words) used to designate a taxon.</dd>
+
+                    <dt id="taxonomic-rank"><em>taxonomic rank</em></dt>
+                    <dd>See <a href="#categorical-rank"><em>categorical rank</em></a>.</dd>
+
+                    <dt id="total-clade"><em>total clade</em></dt>
+                    <dd>A clade composed of a crown clade and all organisms (and species) that share a more recent
+                        common ancestor with that crown clade than with any extant organisms or species that are not
+                        members of that crown clade. See <a href="/code/chapters/1#article-2.2">Article 2.2</a>.</dd>
+
+                    <dt id="total-clade-definition"><em>total-clade definition</em></dt>
+                    <dd>A phylogenetic definition that necessarily identifies a total clade (<a
+                            href="/code/chapters/1#article-2.2">Art. 2.2</a>) as the referent
+                        of a taxon name. See <a href="/code/articles/9#article-9.10">Article 9.10</a>. </dd>
+
+                    <dt id="type"><em>type</em> (=<em>nomenclatural type</em>)</dt>
+                    <dd>In the rank-based codes, the specimen, specimens, or subordinate taxon to which a taxon name is
+                        permanently attached; the type provides the standard of reference that determines the
+                        application of a name.</dd>
+
+                    <dt id="typified-name"><em>typified name</em></dt>
+                    <dd>A name whose application is determined by a type under a rank-based code.</dd>
+
+                    <dt id="unconditionally-suppressed-name"><em>unconditionally suppressed name</em></dt>
+                    <dd>A name that has been suppressed by the Committee on Phylogenetic Nomenclature in all
+                        phylogenetic contexts (see <a href="#suppressed-name"><em>suppressed name</em></a>); there are
+                        no
+                        conditions under which it would have
+                        precedence over any other name.</dd>
+
+                    <dt id="uninomen"><em>uninomen</em> (<em>uninomina</em>)</dt>
+                    <dd>A name composed of a single word; in this code, the term is used to refer to the second part of
+                        a species binomen that is being treated as the name of a species (though the names of clades are
+                        also uninomina).</dd>
+
+                    <dt id="unrestricted-emendation"><em>unrestricted emendation</em></dt>
+                    <dd>A formal change in a phylogenetic definition that does not require approval by the Committee on
+                        Phylogenetic Nomenclature; an unrestricted emendation is intended to prevent undesirable changes
+                        in the application of a particular name (in terms of clade conceptualization) when the original
+                        definition is applied in the context of a revised phylogeny. See <a
+                            href="#restricted-emendation"><em>restricted emendation</em></a>.</dd>
+                </dl>
+            </section>
+
         </article>
     </main>
     <nav id="page-nav">
-        <a class="prev" href="/code/articles/22">Article 22<span class="description">. Governance of Phylogeneticall Defined Names</span></a>
-        <a class="next" href="/code/appendices/a">Appendix A<span class="description">. Registration Procedures and Data Requirements</span></a>
+        <a class="prev" href="/code/chapters/12">Article 22<span class="description">. Governance of Phylogeneticall
+                Defined Names</span></a>
+        <a class="next" href="/code/appendices/a">Appendix A<span class="description">. Registration Procedures and Data
+                Requirements</span></a>
     </nav>
 </body>
 

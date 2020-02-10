@@ -432,8 +432,8 @@ ul.files {
 }
 
 .footnote-link {
-    font-size: 0.75rem;
-    line-height: 1rem;
+    font-size: 0.667rem;
+    line-height: 0;
     text-decoration: none;
     vertical-align: super;
 }
