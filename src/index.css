@@ -168,15 +168,16 @@ td:empty:after {
 }
 
 #site-nav-content > li {
-    padding: 0.5em;
     text-transform: uppercase;
 }
 
 #site-nav-content > li > span {
     opacity: 0.5;
+    padding: 0.25rem 0.5rem;
 }
 
 #site-nav-content > li > a {
+    padding: 0.25rem 0.5rem;
     text-decoration: none;
 }
 
