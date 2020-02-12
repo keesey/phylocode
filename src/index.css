@@ -357,7 +357,7 @@ main .highlight:hover {
 } 
 
 main > header {
-    margin: 0 2.5in;
+    margin: 0 1.25in;
 }
 
 main > footer {
@@ -556,7 +556,7 @@ ul.footnotes {
 }
 
 @media (max-width: 499px) {
-    article {
+    article, main > header, main > footer {
         font-size: 3.2vw;
     }
 }
@@ -572,7 +572,7 @@ ul.footnotes {
     #site-nav > div > header {
         font-size: 10vw;
     }
-    article {
+    article, main > header, main > footer {
         font-size: 8px;
     }
 }
