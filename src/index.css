@@ -73,6 +73,10 @@ html {
     vertical-align: middle;
 }
 
+nav {
+    z-index: 2;
+}
+
 p {
     margin-block-start: 0;
 }
@@ -310,6 +314,7 @@ main .highlight {
     position: absolute;
     margin-left: -1.5rem;
     opacity: 0;
+    z-index: 0;
 }
 
 main .highlight.active {
@@ -525,7 +530,7 @@ ul.footnotes {
         top: 50px;
     }
     #site-nav.open {
-        z-index: 2;
+        z-index: 3;
     }
     #site-nav.open #site-nav-content {
         display: flex;
