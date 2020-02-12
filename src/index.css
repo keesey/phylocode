@@ -20,9 +20,9 @@ abbr[title] {
 }
 
 aside {
-    background-color: #ce84ef;
-    border-radius: 8px;
-    color: #ffffff;
+    border-radius: 1rem;
+    border: #08527b 3px solid;
+    color: #08527b;
     font-style: italic;
     padding: 1rem;
     margin: 1rem 0;
@@ -276,7 +276,7 @@ td:empty:after {
 #page-nav {
     background-color: #fff;
     bottom: 0;
-    color: #ce84ef;
+    color: #b0b0b0;
     display: flex;
     font-size: 10pt;
     justify-content: space-between;
@@ -284,6 +284,10 @@ td:empty:after {
     position: fixed;
     left: 2.5in;
     right: 0;
+}
+
+#page-nav a {
+    color: #ce84ef;
 }
 
 #page-nav .prev::before {
