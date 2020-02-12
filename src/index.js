@@ -55,7 +55,7 @@
             document.getElementById("site-nav").classList.remove("open");
         });
         {
-            const identified = document.querySelectorAll("article [id]");
+            const identified = document.querySelectorAll("main [id]");
             for (let i = 0; i < identified.length; ++i) {
                 identified.item(i).addEventListener("mouseover", handleMouseOverIdentified);
             }

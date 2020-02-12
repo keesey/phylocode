@@ -405,10 +405,9 @@ em.author, em.editor {
 
 em.volume {
     font-style: normal;
-    font-weight: bold;
 }
 
-cite.article-title, cite.volume-title {
+cite.article-title, cite.journal, cite.volume-title, cite > cite {
     font-style: normal;
 }
 
@@ -448,13 +447,16 @@ ul.files {
     vertical-align: super;
 }
 
-ul.footnotes {
+ul.footnotes, ol.footnotes {
     border-top: 1px solid;
     font-size: 14px;
     margin-top: 2rem;
-    list-style-type: none;
     padding: 1rem 0 0;
     text-align: left;
+}
+
+ul.footnotes {
+    list-style-type: none;
 }
 
 .list-marker {
