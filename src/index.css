@@ -305,22 +305,26 @@ main .indicated {
     animation-timing-function: ease-in-out;
 }
 
-article .highlight {
+main .highlight {
     cursor: pointer;
     position: absolute;
     margin-left: -1.5rem;
+    opacity: 0;
+}
+
+main .highlight.active {
     opacity: 0.5;
 }
 
-article .highlight:before {
+main .highlight:before {
     content: "🔗"
 }
 
-article .highlight:active {
+main .highlight:active {
     opacity: 1;
 }
 
-article .highlight:hover {
+main .highlight:hover {
     opacity: 0.75;
 }
 

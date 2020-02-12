@@ -1,4 +1,4 @@
-(function() {
+(function () {
     function indicateSelection() {
         const fragment = (window.location.hash || "").replace(/^#/, "");
         const element = document.getElementById(fragment);
@@ -24,21 +24,19 @@
                 classList.toggle("closed");
             }
         }
-        let highlightLink = null;
+        function hideAllHighlights() {
+            const highlights = document.querySelectorAll(".highlight");
+            for (let i = 0; i < highlights.length; ++i) {
+                highlights.item(i).classList.remove("active");
+            }
+        }
         function handleMouseOverIdentified(event) {
             event.stopPropagation();
-            const id = event.currentTarget.id;
-            if (highlightLink) {
-                highlightLink.parentElement.removeChild(highlightLink);
-                highlightLink = null;
+            hideAllHighlights();
+            const highlight = event.currentTarget.querySelector(".highlight");
+            if (highlight) {
+                highlight.classList.add("active");
             }
-            highlightLink = document.createElement("a");
-            highlightLink.classList.add("highlight");
-            highlightLink.setAttribute("role", "button")
-            highlightLink.addEventListener("mousedown", function() {
-                window.location.href = `#${id}`;
-            });
-            event.currentTarget.insertBefore(highlightLink, event.currentTarget.firstChild);
         }
         indicateSelection();
         {
@@ -57,7 +55,17 @@
         {
             const identified = document.querySelectorAll("main [id]");
             for (let i = 0; i < identified.length; ++i) {
-                identified.item(i).addEventListener("mouseover", handleMouseOverIdentified);
+                const element = identified.item(i);
+                const id = element.id;
+                const highlightLink = document.createElement("a");
+                highlightLink.classList.add("highlight");
+                highlightLink.setAttribute("role", "button")
+                highlightLink.addEventListener("mousedown", function () {
+                    hideAllHighlights();
+                    window.location.href = `#${id}`;
+                });
+                element.insertBefore(highlightLink, identified.item(i).firstChild);
+                element.addEventListener("mouseover", handleMouseOverIdentified);
             }
         }
     });
