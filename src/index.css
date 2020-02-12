@@ -403,6 +403,15 @@ em.author, em.editor {
     font-variant: small-caps;
 }
 
+em.volume {
+    font-style: normal;
+    font-weight: bold;
+}
+
+cite.article-title, cite.volume-title, cite > cite {
+    font-style: normal;
+}
+
 figure {
     margin-inline-end: auto;
     margin-inline-start: auto;
