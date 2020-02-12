@@ -408,7 +408,7 @@ em.volume {
     font-weight: bold;
 }
 
-cite.article-title, cite.volume-title, cite > cite {
+cite.article-title, cite.volume-title {
     font-style: normal;
 }
 
