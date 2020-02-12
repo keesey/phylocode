@@ -20,14 +20,22 @@ abbr[title] {
 }
 
 aside {
+    background-color: #ce84ef;
+    border-radius: 8px;
+    color: #ffffff;
     font-style: italic;
-    margin: 2rem 0;
+    padding: 1rem;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+aside p:last-child {
+    margin-bottom: 0;
 }
 
 button {
     appearance: none;
     cursor: pointer;
-    -webkit-appearance: none;
 }
 
 button:focus {
@@ -91,7 +99,7 @@ table {
     width: 100%;
 }
 
-table ul {
+table aside, table ul {
     margin: 0;
 }
 
@@ -457,6 +465,7 @@ ul.footnotes, ol.footnotes {
     margin-top: 2rem;
     padding: 1rem 0 0;
     text-align: left;
+    width: 100%;
 }
 
 ul.footnotes {
