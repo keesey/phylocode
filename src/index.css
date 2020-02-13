@@ -53,23 +53,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: calc(1rem + 10px);
+    font-size: 2em;
 }
 
 h2 {
-    font-size: calc(1rem + 6px);
+    font-size: 1.5em;
 }
 
 h3 {
-    font-size: calc(1rem + 4px);
+    font-size: 1.25em;
 }
 
 h4 {
-    font-size: calc(1rem + 2px);
+    font-size: 1.125em;
 }
 
 h5, h6 {
-    font-size: 1rem;
+    font-size: 1em;
 }
 
 header {
@@ -285,6 +285,10 @@ td:empty:after {
     position: fixed;
     left: 2.5in;
     right: 0;
+}
+
+#page-nav > * {
+    text-align: center;
 }
 
 #page-nav a {
