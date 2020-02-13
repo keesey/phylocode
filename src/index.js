@@ -12,10 +12,12 @@
     }
     document.addEventListener("DOMContentLoaded", function () {
         function handleFolderClick(event) {
+            if (event.currentTarget !== event.target) {
+                return;
+            }
             event.stopPropagation();
             const classList = event.currentTarget.classList;
             const href = event.path && event.path[0] ? event.path[0].href : undefined;
-            console.log(event);
             if (typeof href === "string" && href.indexOf("#") >= 0) {
                 classList.add("open");
                 classList.remove("closed");

@@ -250,6 +250,7 @@ td:empty:after {
     height: 16px;
     justify-content: center;
     margin-right: 0.5em;
+    vertical-align: text-bottom;
     width: 16px;
 }
 
@@ -424,7 +425,7 @@ em.volume {
     font-weight: bold;
 }
 
-cite.article-title, cite.journal, cite.volume-title, cite > cite {
+cite.article-title, cite > cite {
     font-style: normal;
 }
 
