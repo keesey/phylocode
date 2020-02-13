@@ -559,14 +559,19 @@ ul.footnotes {
     article, main > header, main > footer {
         font-size: 3.2vw;
     }
+    #page-nav .copyright {
+        display: none;
+    }
 }
 
 @media (max-width: 249px) {
     #page-nav .prev, #page-nav .next {
+        font-size: 0;
         text-decoration: none;
         visibility: hidden;
     }
     #page-nav .prev::before, #page-nav .next::after {
+        font-size: 1rem;
         visibility: visible;
     }
     #site-nav > div > header {
