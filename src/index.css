@@ -47,6 +47,11 @@ code {
     font-style: italic;
 }
 
+figure {
+    break-inside: avoid;
+    page-break-inside: avoid;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
     text-align: center;
@@ -95,11 +100,14 @@ p {
 }
 
 table {
+    break-inside: avoid;
+    page-break-inside: avoid;
     text-align: left;
     width: 100%;
 }
 
 table aside, table ul {
+    border: none;
     margin: 0;
 }
 
