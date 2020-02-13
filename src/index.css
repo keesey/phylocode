@@ -20,12 +20,12 @@ abbr[title] {
 }
 
 aside {
-    border-radius: 1rem;
+    border-radius: 1em;
     border: #08527b 3px solid;
     color: #08527b;
     font-style: italic;
-    padding: 1rem;
-    margin: 1rem 0;
+    padding: 1em;
+    margin: 1em 0;
     text-align: center;
 }
 
@@ -316,8 +316,8 @@ td:empty:after {
 main :target::before {
     content: "";
     display: block;
-    height: calc(50px + 1rem);
-    margin-top: calc(-50px - 1rem);
+    height: calc(50px + 1em);
+    margin-top: calc(-50px - 1em);
 }
 
 main {
@@ -342,7 +342,7 @@ main .indicated {
 main .highlight {
     cursor: pointer;
     position: absolute;
-    margin-left: -1.5rem;
+    margin-left: -1.5em;
     opacity: 0;
     z-index: 0;
 }
@@ -424,7 +424,11 @@ article h5+p+p, article h6+p+p {
 }
 
 section {
-    margin-top: 2rem;
+    margin-top: 2em;
+}
+
+article > section:first-child {
+    margin-top: 0;    
 }
 
 em.author, em.editor {
@@ -455,7 +459,7 @@ figure > img, figure > svg {
 
 figcaption {
     font-size: 14px;
-    margin-top: 1rem;
+    margin-top: 1em;
     text-align: justify;
 }
 
@@ -471,7 +475,7 @@ ul.files {
 }
 
 .footnote-link {
-    font-size: 0.667rem;
+    font-size: 0.667em;
     line-height: 0;
     text-decoration: none;
     vertical-align: super;
@@ -480,8 +484,8 @@ ul.files {
 ul.footnotes, ol.footnotes {
     border-top: 1px solid;
     font-size: 14px;
-    margin-top: 2rem;
-    padding: 1rem 0 0;
+    margin-top: 2em;
+    padding: 1em 0 0;
     text-align: left;
     width: 100%;
 }
@@ -492,7 +496,7 @@ ul.footnotes {
 
 .list-marker {
     font-size: smaller;
-    line-height: 1rem;
+    line-height: 1em;
     text-decoration: none;
     vertical-align: super;
     display: inline-block;
