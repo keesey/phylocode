@@ -421,6 +421,7 @@ em.author, em.editor {
 
 em.volume {
     font-style: normal;
+    font-weight: bold;
 }
 
 cite.article-title, cite.journal, cite.volume-title, cite > cite {
