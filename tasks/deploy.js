@@ -6,7 +6,7 @@ module.exports = done => {
     const uploader = client.uploadDir({
         localDir: dest,
         s3Params: {
-            Bucket: "keesey-comics.com",
+            Bucket: "demo.phylonames.org",
             Prefix: "",
         },
     });
