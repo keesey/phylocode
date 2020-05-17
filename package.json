@@ -13,17 +13,17 @@
   ],
   "description": "The website for The International Code of Phylogenetic Nomenclature (The PhyloCode)",
   "devDependencies": {
-    "autoprefixer": "^9.6.1",
+    "autoprefixer": "^9.8.0",
     "cssnano": "^4.1.10",
     "del": "^5.1.0",
-    "graceful-fs": "^4.2.2",
+    "graceful-fs": "^4.2.4",
     "gulp": "^4.0.2",
     "gulp-htmlmin": "^5.0.1",
-    "gulp-imagemin": "^6.1.0",
+    "gulp-imagemin": "^7.1.0",
     "gulp-postcss": "^8.0.0",
-    "gulp-uglify-es": "^1.0.4",
+    "gulp-uglify-es": "^2.0.0",
     "s3": "^4.4.0",
-    "serve": "^11.1.0"
+    "serve": "^11.3.0"
   },
   "license": "UNLICENSED",
   "name": "phylocode.org",
