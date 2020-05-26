@@ -99,6 +99,10 @@ p {
     margin-block-start: 0;
 }
 
+.symbol {
+    font-family: "MS Mincho", serif;
+}
+
 table {
     break-inside: avoid;
     page-break-inside: avoid;
