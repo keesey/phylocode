@@ -20,6 +20,7 @@
     "gulp": "^4.0.2",
     "gulp-htmlmin": "^5.0.1",
     "gulp-imagemin": "^7.1.0",
+    "gulp-nunjucks-api": "^0.9.1",
     "gulp-postcss": "^8.0.0",
     "gulp-uglify-es": "^2.0.0",
     "s3": "^4.4.0",
