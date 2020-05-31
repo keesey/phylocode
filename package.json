@@ -35,5 +35,5 @@
     "serve": "gulp watch & serve dist --no-compression --listen 3000",
     "watch": "gulp watch"
   },
-  "version": "1.0.1"
+  "version": "1.0.2"
 }
