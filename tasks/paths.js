@@ -7,5 +7,6 @@ module.exports = {
         pages: "./src/html/**/*.html",
         scripts: "./src/html/**/*.js",
         styles: "./src/html/**/*.css",
+        templates: "./src/templates/**/*.html",
     },
 };

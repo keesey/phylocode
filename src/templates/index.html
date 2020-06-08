@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:type" content="Website">
+    <meta property="og:site_name" content="International Society for Phylogenetic Nomenclature">
+    <meta name="version" content="{{ version }}">
+    {% block metadata %}
+    <title>International Society for Phylogenetic Nomenclature</title>
+    <meta property="og:title" content="International Society for Phylogenetic Nomenclature">
+    <meta name="description"
+        content="The ISPN encourages the development and use of phylogenetic nomenclature and oversees the implementation of a code of rules to govern phylogenetic nomenclature—the PhyloCode.">
+    <meta property="og:description"
+        content="The ISPN encourages the development and use of phylogenetic nomenclature and oversees the implementation of a code of rules to govern phylogenetic nomenclature—the PhyloCode.">
+    <meta name="twitter:description"
+        content="The ISPN encourages the development and use of phylogenetic nomenclature and oversees the implementation of a code of rules to govern phylogenetic nomenclature—the PhyloCode.">
+    <meta name="author" content="International Society for Phylogenetic Nomenclature">
+    <link rel="canonical" href="http://phylonames.org/">
+    <meta property="og:url" content="http://phylonames.org/">
+    <meta name="twitter:site" content="@phylonames">
+    <meta name="twitter:domain" content="phylonames.org">
+    <script
+        type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","contactPoint":[{"@type":"ContactPoint","contactType":"technical","email":"webmaster@phylonames.org"}],"description":"The ISPN encourages the development and use of phylogenetic nomenclature and oversees the implementation of a code of rules to govern phylogenetic nomenclature—the PhyloCode.","foundingDate":"2004-07","name":"International Society for Phylogenetic Nomenclature","sameAs":["https://www.facebook.com/phylocode/","https://www.twitter.com/phylonames"],"url":"https://phylonames.org"}</script>
+    {% endblock %}
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="/index.css">
+    {% block styles %}
+    {% endblock %}
+    <script src="/index.js"></script>
+    {% block scripts %}
+    {% endblock %}
+</head>
+
+<body>
+    <nav id="site-nav">
+        <div>
+            <header><a href="/"><abbr title="International Society for Phylogenetic Nomenclature">ISPN</abbr></header>
+            <ul id="site-nav-content">
+                <li>
+                    {% block siteNavAbout %}
+                    <a href="/about">About</a>
+                    {% endblock %}
+                </li>
+                <li>
+                    {% block siteNavMembership %}
+                    <a href="/membership">Join</a>
+                    {% endblock %}
+                </li>
+                <li>
+                    {% block siteNavCode %}
+                    <a href="/code"><cite><abbr
+                                title="International Code of Phylogenetic Nomenclature">PhyloCode</abbr></cite></a>
+                    {% endblock %}
+                </li>
+                <li>
+                    {% block siteNavNews %}
+                    <a href="/news">News</a>
+                    {% endblock %}
+                </li>
+                <li>
+                    {% block siteNavLiterature %}
+                    <a href="/literature">Literature</a>
+                    {% endblock %}
+                </li>
+                <li>
+                    {% block siteNavEvents %}
+                    <a href="/events">Events</a>
+                    {% endblock %}
+                </li>
+                <li>
+                    {% block siteNavDocuments %}
+                    <a href="/documents">Documents</a>
+                    {% endblock %}
+                </li>
+            </ul>
+            <button id="site-nav-button">☰</button>
+        </div>
+    </nav>
+    <main>
+        <header>
+            {% block header %}
+            <span>Welcome to the website of the</span>
+            <h1>International Society for Phylogenetic Nomenclature</h1>
+            {% block %}
+        </header>
+        <article>
+            {% block article %}
+            <p>The <abbr title="International Society for Phylogenetic Nomenclature">ISPN</abbr> encourages the
+                development and use of phylogenetic nomenclature and oversees the implementation of a code of rules to
+                govern phylogenetic nomenclature—the <a href="/code"><cite><abbr
+                            title="International Code of Phylogenetic Nomenclature">PhyloCode</abbr></cite></a>.</p>
+            <p>The society is open to anyone wishing to partake in this venture.</p>
+            {% block %}
+        </article>
+    </main>
+    <nav id="page-nav">
+        {% block pageNavPrev %}
+        {% block %}
+        <span class="copyright"><abbr title="Copyright">©</abbr> <time datetime={{year}}>{{ year }}</time> <abbr
+                title="International Society for Phylogenetic Nomenclature">ISPN</abbr></span>
+        {% block pageNavNext %}
+        {% block %}
+    </nav>
+    <script>var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-38183037-1']); _gaq.push(['_trackPageview']); (function () { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })();</script>
+</body>
+
+</html>
