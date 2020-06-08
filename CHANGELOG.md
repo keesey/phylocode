@@ -18,6 +18,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Security
 
+## [1.1.1] - 2020-06-08
+
+### Fixed
+
+- Link to RegNum in Appendix A.
+
 ## [1.1.0] - 2020-06-08
 
 ### Added
