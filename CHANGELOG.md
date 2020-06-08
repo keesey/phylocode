@@ -18,6 +18,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Security
 
+## [1.1.0] - 2020-06-08
+
+### Added
+
+- Links to RegNum in Appendix A.
+- RegNum nav item.
+
+### Fixed
+
+- Some malformed links in the Index Page.
+
 ## [1.0.2] - 2020-05-30
 
 ### Changed
