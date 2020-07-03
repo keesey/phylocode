@@ -85,7 +85,7 @@
             {% block header %}
             <span>Welcome to the website of the</span>
             <h1>International Society for Phylogenetic Nomenclature</h1>
-            {% block %}
+            {% endblock %}
         </header>
         <article>
             {% block article %}
@@ -94,16 +94,16 @@
                 govern phylogenetic nomenclature—the <a href="/code"><cite><abbr
                             title="International Code of Phylogenetic Nomenclature">PhyloCode</abbr></cite></a>.</p>
             <p>The society is open to anyone wishing to partake in this venture.</p>
-            {% block %}
+            {% endblock %}
         </article>
     </main>
     <nav id="page-nav">
         {% block pageNavPrev %}
-        {% block %}
+        {% endblock %}
         <span class="copyright"><abbr title="Copyright">©</abbr> <time datetime={{year}}>{{ year }}</time> <abbr
                 title="International Society for Phylogenetic Nomenclature">ISPN</abbr></span>
         {% block pageNavNext %}
-        {% block %}
+        {% endblock %}
     </nav>
     <script>var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-38183037-1']); _gaq.push(['_trackPageview']); (function () { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })();</script>
 </body>
