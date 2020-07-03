@@ -1,0 +1,89 @@
+{% extends "base.njk" %}
+
+{% block metadata %}
+<title>Events—{{ title }}</title>
+<meta property="og:title" content="Events—{{ title }}">
+<meta name="description"
+    content="Meetings associated with the International Society for Phylogenetic Nomenclature.">
+<meta property="og:description"
+    content="Meetings associated with the International Society for Phylogenetic Nomenclature.">
+<meta name="twitter:description"
+    content="Meetings associated with the International Society for Phylogenetic Nomenclature.">
+<link rel="canonical" href="http://phylonames.org/events">
+<meta property="og:url" content="http://phylonames.org/events">
+{% endblock %}
+
+{% block styles %}
+<style>
+    h3 {
+        font-size: 1rem;
+    }
+    article > section {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+</style>
+{% endblock %}
+
+
+{% block header %}
+<h1>International Society for Phylogenetic Nomenclature</h1>
+<h2>Events</h2>
+{% endblock %}
+
+{% block article %}
+<section id="ipnm3">
+    <h2>Third International Phylogenetic Nomenclature Meeting</h2>
+    <h3><time datetime="2008-07-21">July 21</time>–<time datetime="2008-07-23">23, 2008</time></h3>
+    <h3>Dalhousie University, Halifax, Nova Scotia, Canada</h3>
+    <a href="/documents/ISPN3_Halifax_2008.pdf" download title="Adobe Portable Document Format">
+        Download the Program
+        <img src="https://www.adobe.com/content/dam/cc/en/legal/images/badges/PDF_32.png" width="32"
+            height="32" alt="Adobe Portable Document Format" class="inline-icon">
+    </a>
+    <p class="citation">
+        <em class="author">Laurin, M.</em>, and <em class="author">H. N. Bryant</em>. <time
+            datetime="2009">2009</time>. <cite class="article-title">Third meeting of
+            the International Society for Phylogenetic Nomenclature: a report.</cite> <cite
+            class="journal-title">Zool. Scr.</cite>
+        <em class="volume">38</em>:<span class="pages">333–337</span>. <a
+            href="https://dx.doi.org/10.1111/j.1463-6409.2008.00379.x"><code>doi:10.1111/j.1463-6409.2008.00379.x</code></a>
+    </p>
+</section>
+<section id="ipnm2">
+    <h2>Second International Phylogenetic Nomenclature Meeting</h2>
+    <h3><time datetime="2006-06-28">June 28</time>–<time datetime="2006-07-2">July 2, 2006</time></h3>
+    <h3>Yale University, New Haven, Connecticut, U.S.A.</h3>
+    <a href="/documents/ISPN_Meeting_Program.pdf" download title="Adobe Portable Document Format">
+        Download the Program
+        <img src="https://www.adobe.com/content/dam/cc/en/legal/images/badges/PDF_32.png" width="32"
+            height="32" alt="Adobe Portable Document Format" class="inline-icon">
+    </a>
+    <p class="citation">
+        <em class="author">Laurin, M.</em>, and <em class="author">P. D. Cantino</em>. <time
+            datetime="2007">2007</time>. <cite class="article-title">Second meeting
+            of the International Society for Phylogenetic Nomenclature: a report.</cite> <cite
+            class="journal-title">Zool. Scr.</cite class="journal-title">
+        <em class="volume">36</em>:<span class="pages">109–117</span>. <a
+            href="https://dx.doi.org/10.1111/j.1463-6409.2006.00268.x"><code>doi:10.1111/j.1463-6409.2006.00268.x</code></a>
+    </p>
+</section>
+<section id="ipnm1">
+    <h2>First International Phylogenetic Nomenclature Meeting</h2>
+    <h3><time datetime="2004-07-06">July 6</time>–<time datetime="2004-07-09">9, 2004</time></h3>
+    <h3>Muséum National d'Histoire Naturelle, Paris, France</h3>
+    <a href="/documents/IPNM.pdf" download title="Adobe Portable Document Format">
+        Download the Program
+        <img src="https://www.adobe.com/content/dam/cc/en/legal/images/badges/PDF_32.png" width="32"
+            height="32" alt="Adobe Portable Document Format" class="inline-icon">
+    </a>
+    <p class="citation">
+        <em class="author">Laurin, M.</em>, and <em class="author">P. D. Cantino</em>. <time
+            datetime="2004">2004</time>. <cite class="article-title">First
+            International Phylogenetic Nomenclature Meeting: a report.</cite> <cite
+            class="journal-title">Zool. Scr.</cite class="journal-title">
+        <em class="volume">33</em>:<span class="pages">475–479</span>. <a
+            href="https://dx.doi.org/10.1111/j.0300-3256.2004.00176.x"><code>doi:10.1111/j.0300-3256.2004.00176.x</code></a>
+    </p>
+</section>
+{% endblock %}
