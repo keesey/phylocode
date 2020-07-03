@@ -2,13 +2,13 @@
 module.exports = {
     dest: "./dist",
     src: {
-        assets: "./src/html/**/*.{doc,docx,pdf}",
+        assets: "./src/assets/**/*.{doc,docx,pdf}",
         data: "./src/data.json",
         images: "./src/html/**/*.{png,svg}",
-        pages: "./src/html/**/*.html",
-        scripts: "./src/html/**/*.js",
-        styles: "./src/html/**/*.css",
+        pages: "./src/templates/**/*.html",
+        scripts: "./src/assets/**/*.js",
+        styles: "./src/assets/**/*.css",
+        templateFiles: "./src/templates/**/*.njk",
         templates: "./src/templates/",
-        templateFiles: "./src/templates/**/*.html",
     },
 };

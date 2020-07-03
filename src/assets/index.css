@@ -155,7 +155,6 @@ td:empty:after {
     display: flex;
     font-family: Georgia, "Times New Roman", Times, serif;
     font-size: 24px;
-    font-style: italic;
     padding-left: 24px;
     padding-right: 24px;
     text-align: left;

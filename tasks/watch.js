@@ -7,10 +7,10 @@ const scripts = require("./scripts");
 const styles = require("./styles");
 module.exports = () => {
     watch(src.assets, assets);
+    watch(src.data, pages);
     watch(src.images, images);
     watch(src.pages, pages);
-    watch(src.data, pages);
-    watch(src.templates, pages);
+    watch(src.templateFiles, pages);
     watch(src.scripts, scripts);
     watch(src.styles, styles);
 };
