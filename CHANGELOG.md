@@ -18,6 +18,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Security
 
+## [1.1.2] - 2020-07-03
+
+### Fixed
+
+- Links to PhyloCode Draft 2b in the Documents Pages.
+
 ## [1.1.1] - 2020-06-08
 
 ### Fixed
