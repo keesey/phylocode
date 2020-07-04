@@ -1,0 +1,322 @@
+{% extends "code/base.njk" %}
+
+{% block author %}
+<meta name="author" content="Philip D. Cantino, Kevin de Queiroz">
+{% endblock %}
+
+{% block metadata %}
+<title>PhyloCode</title>
+<meta property="og:title" content="PhyloCode">
+<meta name="description"
+    content="The PhyloCode is a code of rules to govern phylogenetic nomenclature.">
+<meta property="og:description"
+    content="The PhyloCode is a code of rules to govern phylogenetic nomenclature.">
+<meta name="twitter:description"
+    content="The PhyloCode is a code of rules to govern phylogenetic nomenclature.">
+<link rel="canonical" href="http://phylonames.org/code">
+<meta property="og:url" content="http://phylonames.org/code">
+{% endblock %}
+
+{% block siteNavCode %}
+<span><cite><abbr
+            title="International Code of Phylogenetic Nomenclature">PhyloCode</abbr></cite></span>
+{% endblock %}
+
+
+{% block header %}
+<svg id="header-logo" width="394" height="222" viewBox="0 0 394 222">
+    <defs>
+        <linearGradient id="gradient-branches" gradientUnits="userSpaceOnUse" x1="152" y1="113.5" x2="287"
+            y2="30">
+            <stop offset="0%" style="stop-color:#b2eced;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#4888ad;stop-opacity:1" />
+        </linearGradient>
+        <!--
+        <filter id="filter-shadow">
+            <feMorphology operator="dilate" radius="2" in="SourceAlpha" result="dilated" />
+            <feGaussianBlur in="dilated" stdDeviation="2" result="blurred" />
+            <feFlood flood-color="rgba(8,82,123,0.5)" result="glowColor" />
+            <feComposite in="glowColor" in2="blurred" operator="in" result="softGlow" />
+            <feMerge>
+                <feMergeNode in="softGlow" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+
+        </filter>
+        -->
+    </defs>
+    <path
+        d="M32,0H362a32,32 0 0 1 32,32V190a32,32 0 0 1 -32,32H32a32,32 0 0 1 -32,-32V32a32,32 0 0 1 32,-32Z"
+        style="fill: #08527b" />
+    <path
+        d="M32,6H362a26,26 0 0 1 26,26V190a26,26 0 0 1 -26,26H32a26,26 0 0 1 -26,-26V32a26,26 0 0 1 26,-26Z"
+        style="fill: #ffffff" />
+    <path d="M197,10C347,10 347,10 272,121.5C197,233 197,233 122,121.5C47,10 47,10 197,10Z"
+        fill="#9cadf7" />
+    <path d="M227,15C337,15 337,15 282,94.5C227,174 227,174 172,94.5C117,15 117,15 227,15Z"
+        fill="#ce84ef" />
+    <path d="M257,20C327,20 327,20 292,65.5C257,111 257,111 222,65.5C187,20 187,20 257,20Z"
+        fill="#b5ffff" />
+    <g style="fill: url(#gradient-branches)">
+        <path d="M187,197L97,30H117L207,197Z" />
+        <path d="M216.77,140.91L157,30H177L236.77,140.91Z" />
+        <path d="M246.89,85.46L217,30H237L266.89,85.46Z" />
+        <path d="M176,216L277,30H297L196,216Z" />
+    </g>
+    <text x="197" y="194"
+        style="font-style: italic; font-size: 72px; font-family: Georgia, 'Times New Roman', Times, serif; text-anchor: middle; fill: #08527b"
+        role="label">PhyloCode</text>
+</svg>
+<section>
+    <h1><cite>International Code of Phylogenetic Nomenclature</cite> (<cite>PhyloCode</cite>)</h1>
+    <p>Version 6<a class="footnote-link" href="#footnote-1" title="Footnote 1">*</a></p>
+    <p>
+        Philip D. Cantino and Kevin de Queiroz<a class="footnote-link" href="#footnote-2"
+            title="Footnote 2">**</a>
+    </p>
+    <p>
+        Ratified on <time datetime="2019-01-20">January 20, 2019</time>, by the Committee on Phylogenetic
+        Nomenclature of the <a href="/">International Society for Phylogenetic Nomenclature</a>: Sina M.
+        Adl,
+        Philip D. Cantino, Nico Cellinese, Kevin de Queiroz, James A. Doyle, Micah Dunthorn, Sean W. Graham,
+        Max
+        Cardoso Langer, Michel Laurin, Richard G. Olmstead, George Sangster, and Mieczyslaw Wolsan.
+    </p>
+    <aside>
+        <p>
+            Web version updated on <time datetime="2020-06-08">June 8, 2020</time>.
+        </p>
+        <p>
+            Designed and developed by <a href="//tmkeesey.net">T. Michael Keesey</a>.
+            <br>
+            Produced by <a href="https://www.ohio.edu/cas/cantino">Philip Cantino</a>.
+            <br>
+            Logo by <a href="//reelab.net/home/index.html#people">Rick Ree</a>.
+        </p>
+    </aside>
+    <footer>
+        <ul class="footnotes">
+            <li id="footnote-1" title="Footnote 1">
+                <span class="list-marker">*</span>
+                This is the first version published in hard copy. Previous versions are available at <a
+                    href="/documents">www.phylocode.org</a>.
+            </li>
+            <li id="footnote-2" title="Footnote 2">
+                <span class="list-marker">**</span>
+                Authors listed alphabetically
+            </li>
+        </ul>
+    </footer>
+</section>
+{% endblock %}
+
+{% block article %}
+<section id="toc">
+    <h2>Contents</h2>
+    <ul>
+        <li>
+            <a href="/code/preface"><strong>Preface</strong></a>
+            <ul>
+                <li>
+                    <a href="/code/preface#properties"><strong>Properties of Phylogenetic
+                            Nomenclature</strong></a>
+                </li>
+                <li>
+                    <a href="/code/preface#advantages"><strong>Advantages of Phylogenetic
+                            Nomenclature</strong></a>
+                </li>
+                <li>
+                    <a href="/code/preface#history"><strong>History</strong></a>
+                </li>
+                <li>
+                    <a href="/code/preface#acknowledgments"><strong>Acknowledgments</strong></a>
+                </li>
+                <li>
+                    <a href="/code/preface/literature-cited"><strong>Literature Cited</strong></a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="/code/preamble"><strong>Preamble</strong></a>
+        </li>
+        <li>
+            <a href="/code/divisions/1"><strong>Division I</strong>. Principles</a>
+        </li>
+        <li>
+            <a href="/code/divisions/2"><strong>Division II</strong>. Rules</a>
+            <ul>
+                <li>
+                    <a href="/code/chapters/1"><strong>Chapter I</strong>. Taxa</a>
+                    <ul>
+                        <li>
+                            <a href="/code/articles/1"><strong>Article 1</strong>. Categories of Taxa</a>
+                        </li>
+                        <li>
+                            <a href="/code/articles/2"><strong>Article 2</strong>. Clades</a>
+                        </li>
+                        <li>
+                            <a href="/code/articles/3"><strong>Article 3</strong>. Hierarchy and
+                                Rank</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/code/chapters/2"><strong>Chapter II</strong>. Publication</a>
+                    <ul>
+                        <li>
+                            <a href="/code/articles/4"><strong>Article 4</strong>. Publication
+                                Requirements</a>
+                        </li>
+                        <li>
+                            <a href="/code/articles/5"><strong>Article 5</strong>. Publication Date</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/code/chapters/3"><strong>Chapter III</strong>. Names</a>
+                    <ul>
+                        <li>
+                            <a href="/code/articles/6"><strong>Article 6</strong>. Categories of Names</a>
+                        </li>
+                        <li>
+                            <a href="/code/articles/7"><strong>Article 7</strong>. General Requirements for
+                                Establishment</a>
+                        </li>
+                        <li>
+                            <a href="/code/articles/8"><strong>Article 8</strong>. Registration</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/code/chapters/4"><strong>Chapter IV</strong>. Establishment of Clade
+                        Names</a>
+                    <ul>
+                        <li>
+                            <a href="/code/articles/9"><strong>Article 9</strong>. General Requirements and
+                                Phylogenetic Definitions</a>
+                        </li>
+                        <li>
+                            <a href="/code/articles/10"><strong>Article 10</strong>. Selection of Clade
+                                Names
+                                for
+                                Establishment</a>
+                        </li>
+                        <li>
+                            <a href="/code/articles/11"><strong>Article 11</strong>. Specifiers and
+                                Qualifying
+                                Clauses</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/code/chapters/5"><strong>Chapter V</strong>. Selection of Accepted
+                        Clade
+                        Names</a>
+                    <ul>
+                        <li>
+                            <a href="/code/articles/12"><strong>Article 12</strong>. Precedence</a>
+                        </li>
+                        <li>
+                            <a href="/code/articles/13"><strong>Article 13</strong>. Homonymy</a>
+                        </li>
+                        <li>
+                            <a href="/code/articles/14"><strong>Article 14</strong>. Synonymy</a>
+                        </li>
+                        <li>
+                            <a href="/code/articles/15"><strong>Article 15</strong>. Conservation,
+                                Suppression
+                                and
+                                Emendation</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/code/chapters/6"><strong>Chapter VI</strong>. Hybrids</a>
+                    <ul>
+                        <li>
+                            <a href="/code/articles/16"><strong>Article 16</strong>. Provisions for
+                                Hybrids</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/code/chapters/7"><strong>Chapter VII</strong>. Orthography</a>
+                    <ul>
+                        <li>
+                            <a href="/code/articles/17"><strong>Article 17</strong>. Orthographic
+                                Requirements
+                                for
+                                Establishment</a>
+                        </li>
+                        <li>
+                            <a href="/code/articles/18"><strong>Article 18</strong>. Subsequent Use and
+                                Correction
+                                of Established Names</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/code/chapters/8"><strong>Chapter VIII</strong>. Authorship</a>
+                    <ul>
+                        <li>
+                            <a href="/code/articles/19"><strong>Article 19</strong>. Authorship of Names
+                                and
+                                Definitions</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/code/chapters/9"><strong>Chapter IX</strong>. Citation</a>
+                    <ul>
+                        <li>
+                            <a href="/code/articles/20"><strong>Article 20</strong>. Citation of Authors
+                                and
+                                Registration Numbers</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/code/chapters/10"><strong>Chapter X</strong>. Species Names</a>
+                    <ul>
+                        <li>
+                            <a href="/code/articles/21"><strong>Article 21</strong>. Provisions for Species
+                                Names</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/code/chapters/11"><strong>Chapter XI</strong>. Governance</a>
+                    <ul>
+                        <li>
+                            <a href="/code/articles/22"><strong>Article 22</strong>. Governance of
+                                Phylogenetically
+                                Defined Names</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="/code/glossary"><strong>Glossary</strong></a>
+        </li>
+        <li>
+            <a href="/code/appendices/a"><strong>Appendix A</strong>. Registration Procedures and Data
+                Requirements</a>
+        </li>
+        <li>
+            <a href="/code/appendices/b"><strong>Appendix B</strong>. Code of Ethics</a>
+        </li>
+        <li>
+            <a href="/code/appendices/c"><strong>Appendix C</strong>. Equivalence of Nomenclatural Terms
+                Among Codes</a>
+        </li>
+        <li>
+            <a href="/code/index/"><strong>Index</strong></a>
+        </li>
+    </ul>
+</section>
+{% endblock %}
+
+{% block pageNavNext %}
+<a class="next" href="/code/preface">Preface</a>
+{% endblock %}

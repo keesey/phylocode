@@ -9,7 +9,9 @@
     <meta property="og:site_name" content="{{ title }}">
     <meta name="twitter:site" content="@phylonames">
     <meta name="twitter:domain" content="phylonames.org">
+    {% block author %}
     <meta name="author" content="International Society for Phylogenetic Nomenclature">
+    {% endblock %}
     <meta name="version" content="{{ version }}">
     {% block metadata %}
     <title>{{ title }}</title>

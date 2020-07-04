@@ -1,0 +1,50 @@
+{% extends "base.njk" %}
+
+{% block author %}
+<meta name="author" content="Philip D. Cantino, Kevin de Queiroz">
+{% endblock %}
+
+{% block metadata %}
+<title>{{ title }}</title>
+<meta property="og:title" content="{{ title }}">
+<meta name="description"
+    content="The ISPN encourages the development and use of phylogenetic nomenclature and oversees the implementation of a code of rules to govern phylogenetic nomenclature—the PhyloCode.">
+<meta property="og:description"
+    content="The ISPN encourages the development and use of phylogenetic nomenclature and oversees the implementation of a code of rules to govern phylogenetic nomenclature—the PhyloCode.">
+<meta name="twitter:description"
+    content="The ISPN encourages the development and use of phylogenetic nomenclature and oversees the implementation of a code of rules to govern phylogenetic nomenclature—the PhyloCode.">
+<meta name="author" content="International Society for Phylogenetic Nomenclature">
+<link rel="canonical" href="http://phylonames.org/">
+<meta property="og:url" content="http://phylonames.org/">
+<script
+    type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","contactPoint":[{"@type":"ContactPoint","contactType":"technical","email":"webmaster@phylonames.org"}],"description":"The ISPN encourages the development and use of phylogenetic nomenclature and oversees the implementation of a code of rules to govern phylogenetic nomenclature—the PhyloCode.","foundingDate":"2004-07","name":"International Society for Phylogenetic Nomenclature","sameAs":["https://www.facebook.com/phylocode/","https://www.twitter.com/phylonames"],"url":"https://phylonames.org"}</script>
+{% endblock %}
+
+{% block styles %}
+<style>
+    article {
+        text-align: left;
+    }
+
+    article ul {
+        list-style-type: none;
+        margin-top: 0.5em;
+        padding-inline-start: 0;
+    }
+
+    article ul li {
+        margin-bottom: 0.5em;
+    }
+
+    article ul ul {
+        padding-inline-start: 1em;
+    }
+
+    #header-logo {
+        height: auto;
+        margin: 0 auto 2rem;
+        max-width: 7.25in;
+        width: 100%;
+    }
+</style>
+{% endblock %}
